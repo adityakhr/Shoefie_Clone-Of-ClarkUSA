@@ -15,6 +15,25 @@
             margin: 0;
             padding: 0;
         }
+        a:nth-child(1){
+            text-decoration: none;
+            color: black;
+        }
+        #offer{
+            background-color: #efb9b9;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer>span{
+            font-size: 18px;
+        }
+        #offer>span:nth-child(2){
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 0 35px 0 35px;
+        }
         .nav>div:nth-child(1){
             height: 50px;
             background-color:rgb(246, 244, 244);
@@ -121,30 +140,11 @@
             color: white;
             border: 0;
         }
-        #visited{
-            background-color:  rgb(246, 244, 244);
-            height: 35px;
-            display: flex;
-            align-items:center;
-            margin-top: 30px;
-        }
-        #visited>a:nth-child(1){
-            margin-left: 10%;
-        }
-        #visited>a>button{
-            margin: 0 5px 0 5px;
-            border: 0px solid rgb(87, 84, 84);
-            height: 25px;
-            border-radius: 3px;
-            background-color: white;
-        }
-        #visited>a>button:hover{
-            cursor: pointer;
-        }
         #contact{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 15px;
         }
         #contact>div{
             margin: 0 30px 0 150px;
@@ -174,38 +174,6 @@
         #contact>div:nth-child(2)>form>button{
             height: 30px;
             background-color: white;
-            border: 1px solid rgb(87, 84, 84);
-        }
-        #mid_section{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        #container{
-            width: 75%;
-        }
-        #container>div:nth-child(1){
-            display: flex;
-            justify-content: space-between;
-        }
-        #filter{
-            width: 25%;
-        }
-        #filter>*{
-            margin-left: 80px;
-        }
-        #filter>*{
-            font-size: 20px;
-            color:  rgb(87, 84, 84);
-        }
-        #sort{
-            width: 25%;
-            height: 40px;
-            font-size: 20px;
-            color: rgb(87, 84, 84);
-            margin-top: 25px;
-            margin-bottom: 25px;
-            margin-right: 100px;
             border: 1px solid rgb(87, 84, 84);
         }
         #footer{
@@ -315,23 +283,251 @@
         #product>div{
             padding-bottom: 20px;
         }
-        #searchBar{
+        #product>div:hover{
+            cursor: pointer;
+        }
+        #offer2{
+            width:99%;
+            height: 70px;
+            margin: auto;
+            background-color: rgb(246, 187, 197);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer2>span{
+           font-size: 18px;
+        }
+        #offer2>img{
+            width: 90px;
+            margin-right: 70px;
+            margin-left: 5px;
+        }
+        #a2{
+            width: 98%;
+            display: block;
+            margin: auto;
+        }
+        #mid2{
             text-align: center;
+            margin-bottom:15px ;
+            padding: 8px 28% 25px 28%;
+            background-color:rgba(167, 167, 172, 0.2); ;
         }
-        #searchBar>form>#inputText{
-            width: 80%;
+        #mid2>div>button{
+            width: 200px;
             height: 40px;
-            margin-top: 25px;
+            margin-right: 25px;
+            font-size: 18px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid3{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #mid3>div{
+            width: 50%;
+            text-align: center;
+            margin-bottom: 150px;
+        }
+        #mid3 img{
+            width: 98%;
+
+        }
+        #mid3>div h1{
+            font-size: 28px;
+        }
+        #mid3 button{
+            width: 250px;
+            height: 30px;
+            margin-right: 25px;
+            font-size: 15px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid3 button:hover{
+            color:white;
+            background-color: black;
+        }
+        #mid3 p{
+            padding: 0 5% 0 5%;
+        }
+        #mid4{
+            text-align: center;
+            background-color:rgb(222, 211, 195);
+            padding-bottom: 80px;
+        }
+        #mid4 img{
+            display: block;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        #mid4>h1{
+            font-size: 45px;
+            margin-bottom: 0;
+        }
+        #mid4 p , #mid4 h1 , #mid4 div:nth-child(4){
+            padding: 0 28% 0 28%;
+        }
+        #mid4 button:nth-child(1){
+            width: 300px;
+            height: 35px;
+            margin-right: 25px;
+            font-size: 16px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid4 button:nth-child(2){
+            width: 200px;
+            height: 35px;
+            margin-right: 25px;
+            font-size: 16px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid4 button:hover{
+            cursor: pointer;
+        }
+        #mid5{
+            width: 99%;
+            margin: auto;
+            margin-top: 28px;
+            margin-bottom: 35px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(38, 95, 142);
+        }
+        #mid5>div{
+            width: 99%;
+            height: 48px;
+            margin: auto;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+        }
+        #mid5>div>a{
+            color: white;
+        }
+        #mid5>div>a>span{
+            color: white;
+            font-weight: bolder;
+            margin-left: 75px;
+        }
+        #mid6{
+            width: 98%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        #mid6 img{
+            width: 95%;
+        }
+        #mid6 button{
+            height: 50px;
+            width:130px ;
+            background-color: white;
+            border: 0;
+            
+        }
+        #mid6>div>button{
+            position: relative;
+            top: -180px;
+        }
+        #mid6>div>button::before{
+            content: "";
+            position: absolute;
+            left:16%;
+            top: 38px;
+            width: 0%;
+            height: 2px;
+            background-color: black;
+        }
+        #mid6>div>button:hover::before{
+            width: 70%;
+            transition: all .2s linear;
+        }
+        #mid6 button:hover{
+            cursor: pointer;
+        }
+        #mid1{
+            width: 95%;
+            margin: auto;
+            background-color:rgb(234, 139, 139);
+            margin-bottom: 25px;
+        }
+        #mid1>div{
+            width: 50%;
+            min-height: 350px;
+            text-align: center;
+            margin: auto;
+            padding-top: 1px;
+            background-color: #efb9b9;;
+        }
+        #mid1 h1:nth-child(1){
+            font-size: 40px;
+            height: 35px;
+        }
+        #mid1 p:nth-child(2){
             font-size: 30px;
+            height: 0px;
+            font-weight: bold;
         }
-        #searchBar>form>#sub{
-            width: 8%;
+        #mid1 p:nth-child(3){
+            font-size:100px;
+            margin-top: 0;
             height: 40px;
-            margin-top: 25px;
+            font-weight: bolder;
+        }
+        #mid1>div>div:nth-child(4){
+            background-color: black;
+            font-size: 25px;
+            color: white;
+            margin: 0 15% 0 15%;
+        }
+        #mid1 p:nth-child(5){
+            font-weight: bold;
+        }
+        #mid1>div>div:nth-child(6){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mid1>div>div:nth-child(6)>button{
+            width: 20%;
+            margin-left: 15px;
+            height: 35px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        #mid1 p:nth-last-child(1){
+            font-size: 12px;
+            height: 35px;
         }
     </style>
 </head>
 <body>
+    <a href="">
+        <div id="offer">
+            <span>SAVE UP TO</span>
+            <span>50% OFF CLEARANCE*</span>
+            <span>USE CODE: EXTRA</span>
+        </div>
+    </a>
     <div class="nav">
         <div>
             <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
@@ -344,7 +540,7 @@
             </div>
             <div id="links">
                 <a href="">Women</a>
-                <a href="">Men</a>
+                <a href="./productsMen.html">Men</a>
                 <a href="">Kids</a>
                 <a href="">Originals</a>
                 <a href="">Accessories</a>
@@ -362,42 +558,134 @@
             <span><a href="">FREE RETURN</a> EVERYDAY</span>
         </div>
     </div>
-    <div id="searchBar">
-        <form>
-            <input type="text" id="inputText" placeholder="Search">
-            <input type="submit" id="sub">
-        </form>
-    </div>
-    <div id="top_section">
-        <h1>MENS SNEAKERS</h1>
-        <P>Our black and white sneakers for men are timeless classics, while stylish and durable leather is a popular material. Learn how to keep white sneakers & shoes pristine and clean with <a href=""> our cleaning guide.</a></P>
+    <div id="mid1">
         <div>
-            <button>MENS CASUAL COLLECTION</button>
-            <button>MENS WALKING SHOES</button>
-        </div>
-    </div>
-    <div id="visited">
-       <a href="./index.html"><button>HOME</button></a>
-       <a href="./index.html"><button>SNEAKERS</button></a>
-    </div>
-    <div id="mid_section">
-        <div id="filter">
-            <p>Filter By</p>
-            <hr>
-        </div>
-        <div id="container">
+            <h1>WINTER CLEARANCE</h1>
+            <p>SAVE UP TO</p>
+            <P>50% OFF*</P>
+            <div>TAKE AN EXTRA 30% OFF MARKDOWNS</div>
+            <p>USE CODE: EXTRA</p>
             <div>
-                <p>Total <span>0</span> products found</p>
-                <select name="" id="sort">
-                    <option value="">Sort by Price</option>
-                    <option value="Low">Low Price</option>
-                    <option value="high">High Price</option>
-                </select>
+                <button>Shop Women</button>
+                <button>shop Men</button>
+                <button>Shop Kids</button>
+                <button>Shop All</button>
             </div>
-            <div id="product">
-
+            <p>For more details see <a href="">Terms & Conditions</a></p>
+        </div>
+    </div>
+    <div id="mid">
+        <img id="a2" src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22WOriannaMidDarkSandSuedeOnsiteBannerDesktop1500x500?fmt=webp&wid=1500" alt="">
+    </div>
+    <div id="mid2">
+        <h1>
+            WINTER REBOOT
+        </h1>
+        <p>
+            Reworking a staple shoe in iconic style, meet our Orianna Mid boot. Crafted in responsibly sourced dark sand suede for a premium look, its chunky profile ticks the box for on-trend, while snug faux shearling linings keeps toes toasty when braving cooler climes. Clarks’ stitching detail nods to our heritage, making every tread timeless, too.
+        </p>
+        <div>
+            <button>
+                Shop Women's Boots
+            </button>
+            <button>
+                Shop Men's Boots
+            </button>
+        </div>
+    </div>
+    <div id="mid3">
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/BANWKS50and51OpalZipPeppleSuedeTabletBanner705x395px?fmt=webp&wid=705" alt="">
+            <div>
+                <h1>
+                    COMFORTABLY WARM
+                </h1>
+                <p>
+                    Keep warm, and look cool in Opal Sky, our Chelsea-inspired suede upper boot. Step out in feel- good style every time with our Ultimate Comfort footbed and slip-resistant sole.               
+                 </p>
+                <div class="child"> 
+                    <button>
+                        Shop Opal Sky On Sale
+                    </button>
+                    <button>
+                        Shop Women's Boots
+                    </button>
+                </div>
             </div>
         </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22CostonWallyWPDarkSandWLinedOnsiteBannerTablet705x397?fmt=webp&wid=705" alt="">
+            <div>
+                <h1>
+                    WEATHER READY WITH A TWIST
+                </h1>
+                <p>
+                    A fresh take on the iconic Wallabee profile, our Corston Wally WP boot melds heritage style with a winter-ready twist. With a fully waterproof finish and snug faux fur linings - the weather's not dampening our plans!                
+                </p>
+                <div class="child">
+                    <button>
+                        Shop Corston Wally On Sale
+                    </button>
+                    <button>
+                        Shop Men'sWaterproof Boots
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid4">
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/ClarksHomepageBanner8thSt1500x500?fmt=webp&wid=1500" alt="">
+        </div>
+        <h1>
+            8TH STREET BY RONNIE FIEG FOR CLARKS ORIGINALS
+        </h1>
+        <p>
+            With nearly three decades of footwear industry expertise to his name, American designer and founder of Kith Ronnie Fieg is a bona fide classic kicks aficionado- making him the perfect partner for a Clarks Originals collab           
+        </p>
+        <div>
+            <button>
+                Shop 8th Street Collection
+            </button>
+            <button>
+                See The Features
+            </button>
+        </div>
+    </div>
+    <div id="mid5">
+        <div>
+            <span>SAFETY RECALL OF FIVE STYLES OF CLARKS WOMEN’S SHOES</span>
+            <a href=""><span>Click Here </span>for more information</a>
+        </div>
+    </div>
+    <div id="mid6">
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/MagnoliaZipBlackLeather852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Women</button>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/MNature5TieBeeswaxLeather852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Men</button>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/WebBannersDualGenderSashikoOriginalsHomepage852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Original</button>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/KWallabeeBootNavyCombi852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Kids</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="offer2">
+        <span>Buy now. Pay Later. with</span>
+        <img src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo" alt="">
+        <a href="">Found out more</a>
     </div>
     <hr>
     <div id="contact">
@@ -412,7 +700,6 @@
             </form>
         </div>
     </div>
-    <hr>
     <div id="footer">
         <div id="parant1">
             <div>
@@ -493,48 +780,4 @@
         </div>
     </div>
 </body>
-<script>
-    let flag =false;
-    let seaEl = document.getElementById("searchfor");
-    let seabarEl = document.getElementById("searchBar");
-    seaEl.addEventListener("click" , function(){
-        if(flag == true){
-          seabarEl.innerHTML = ""
-          flag = false;  
-        }
-        if(flag == false){
-            flag = true;
-        }else{
-            flag = false;
-        }
-    });
-    let divEl = document.getElementById("product");
-    function display(data){
-        divEl.innerHTML = "";
-        for(let i=0 ; i<data.length ; ++i){
-            let div = document.createElement("div");
-            let img = document.createElement("img");
-            img.setAttribute("src" , data[i].img);
-            let name = document.createElement("h2");
-            name.innerText = data[i].name;
-            let cate = document.createElement("p");
-            cate.innerText = data[i].category;
-            let price = document.createElement("p");
-            price.innerText = `$ ${Number(data[i].price)}`;
-            div.append(img , name , cate , price );
-            divEl.append(div);
-        }
-    }
-    async function fetchdata(){
-        try{
-            let re = await fetch("https://63c67a834ebaa8028546a618.mockapi.io/products");
-            let sul = await re.json();
-            display(sul);
-        }
-        catch(error){
-            console.log(error);
-        }
-    }
-    fetchdata();
-</script>
 </html>

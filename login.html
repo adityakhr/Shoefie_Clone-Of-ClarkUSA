@@ -101,24 +101,24 @@
             margin-top: 90px;
             margin-bottom: 150px;
         }
-        #input>p{
+        #input>form>p{
             margin-bottom: 8px;
             font-size: 15px;
         }
-        #input>input{
+        #input>form>input{
             width: 98%;
             height: 35px;
             margin-bottom: 10px;
         }
-        #input img{
+        #input>form img{
             width: 20px;
         }
-        #input>a{
+        #input>form>a{
             font-size: 15px;
             color: rgb(9, 146, 200);
             display: block;
         }
-        #input>button{
+        #input>form>button{
             width: 100%;
             height: 40px;
             margin: 30px 0 0 0;
@@ -127,26 +127,26 @@
             background-color: #1E88E5;
             font-size: 18px;
         }
-        #input>button:hover{
+        #input>form>button:hover{
             background-color: grey;
             cursor: pointer;
         }
-        #input>p:nth-last-child(1){
+        #input>form>p:nth-last-child(1){
             text-align: center;
         }
-        #input>p:nth-last-child(3){
+        #input>form>p:nth-last-child(3){
             margin-top: 30px;
             font-size: 18px;
             color: rgb(156, 150, 150);
         }
-        #input>p>a{
+        #input>form>p>a{
             color: #1E88E5;
         }
         #contact{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 0;
+            margin-bottom: 18px;
         }
         #contact>div{
             margin: 0 30px 0 150px;
@@ -293,7 +293,7 @@
             </div>
             <div id="links">
                 <a href="">Women</a>
-                <a href="">Men</a>
+                <a href="./productsMen.html">Men</a>
                 <a href="">Kids</a>
                 <a href="">Originals</a>
                 <a href="">Accessories</a>
@@ -316,14 +316,16 @@
     </div>
     <hr>
     <div id="input">
-        <p>Email Adderss</p>
-        <input type="email">
-        <p>Password <img src="./information.svg"></p>
-        <input type="password">
-        <a href="">Forget Your Password?</a>
-        <p><input type="checkbox" name="" id="">Remember Me</p>
-        <button>LOG IN</button>
-        <p>Don't have a clarks account? <a href="./register.html">CREAT AN ACCOUNT</a></p>
+        <form id="form">
+            <p>Email Adderss</p>
+            <input type="email" id="email" required  >
+            <p>Password <img src="./information.svg"></p>
+            <input type="password" id="password" required>
+            <a href="">Forget Your Password?</a>
+            <p><input type="checkbox" name="" id="">Remember Me</p>
+            <button type="submit">LOG IN</button>
+            <p>Don't have a clarks account? <a href="./register.html">CREAT AN ACCOUNT</a></p>
+        </form>
     </div>
     <hr>
     <div id="contact">
@@ -338,7 +340,6 @@
             </form>
         </div>
     </div>
-    <hr>
     <div id="footer">
         <div id="parant1">
             <div>
@@ -419,4 +420,33 @@
         </div>
     </div>
 </body>
+<script>
+    let userData = JSON.parse( localStorage.getItem("data"));
+    if(userData===null){
+        userData = [];
+    }
+    let emailEl = document.getElementById("email");
+    let passwordEl = document.getElementById("password")
+    let formEl = document.querySelector("form");
+    function check(a, b , arr){
+        for(let i=0 ; i<arr.length ; ++i){
+            if(arr[i].email.toUpperCase() === a.value.toUpperCase() && arr[i].password === b.value ){
+                return true;
+            }
+        }
+        return false;
+    }
+    formEl.addEventListener( "submit" , function(el){
+        el.preventDefault();
+        if(check(emailEl , passwordEl , userData)==true){
+            alert("Log In Successful");
+            window.location.href="afterLoginPage.html";
+        }
+        else{
+            alert("Invalid Information");
+        }
+        emailEl.value="";
+        passwordEl.value ="";
+    });
+</script>
 </html>

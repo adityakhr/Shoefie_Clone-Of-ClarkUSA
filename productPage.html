@@ -8,12 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Shoefie Official Site/Signup</title>
+    <title>Shoefie Official Site/Nature X Lo</title>
     <style>
         body{
             font-family: poppins;
             margin: 0;
             padding: 0;
+        }
+        a:nth-child(1){
+            text-decoration: none;
+            color: black;
+        }
+        #offer{
+            background-color: #efb9b9;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer>span{
+            font-size: 18px;
+        }
+        #offer>span:nth-child(2){
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 0 35px 0 35px;
         }
         .nav>div:nth-child(1){
             height: 50px;
@@ -37,6 +56,7 @@
             display: flex;
             align-items: center;
             box-shadow: rgba(100, 100, 111, 0.2);
+            
         }
         #logo{
             text-align: center;
@@ -76,71 +96,41 @@
             width: 130px;
             border-radius: 40px;
         }
-        #logHeading{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #logHeading>p:nth-child(1){
-            font-size: 50px;
-            margin-left: 7%;
-        }
-        #logHeading>div{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-right: 7%;
-        }
-        #logHeading>div>img{
-            width: 18%;
-        }
-        #input{
-            width: 28%;
-            margin: auto;
-            margin-top: 90px;
-            margin-bottom: 150px;
-        }
-        #input>form>p{
-            margin-bottom: 8px;
-            font-size: 15px;
-        }
-        #input>form>input{
+        .nav>div:nth-child(3){
             width: 98%;
+            margin: auto;
+            background-color: gainsboro;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav>div:nth-child(3)>span:nth-child(2){
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(3)>span>a{
+            color: rgb(87, 84, 84);
+        }
+        #visited{
+            background-color:  rgb(246, 244, 244);
             height: 35px;
-            margin-bottom: 10px;
+            display: flex;
+            align-items:center;
+            margin-top: 10px;
         }
-        #input img{
-            width: 20px;
+        #visited>a:nth-child(1){
+            margin-left: 10%;
         }
-        #input>form>a{
-            font-size: 15px;
-            color: rgb(9, 146, 200);
-            display: block;
+        #visited>a>button{
+            margin: 0 5px 0 5px;
+            border: 0px solid rgb(87, 84, 84);
+            height: 25px;
+            border-radius: 3px;
+            background-color: white;
         }
-        #input>form>button{
-            width: 100%;
-            height: 40px;
-            margin: 30px 0 0 0;
-            border: 0 ;
-            color: white;
-            background-color: grey;
-            font-size: 18px;
-        }
-        #input>form>button:hover{
-            background-color: rgb(157, 153, 153);
+        #visited>a>button:hover{
             cursor: pointer;
-        }
-        
-        #input>form>p:nth-last-child(3){
-            margin-bottom: 0px;
-        }
-        #input>form>p>a{
-            color: #1E88E5;
-        }
-        #input>form>p:nth-last-child(2){
-            margin-top: 0;
-        }
-        #contact{
+        }#contact{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -176,10 +166,55 @@
             background-color: white;
             border: 1px solid rgb(87, 84, 84);
         }
+        #mid2{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            background-color:rgb(248, 247, 247);
+            padding:25px 25px 30px 0;
+        }
+        #mid2>div:nth-child(1){
+            width: 55%;
+            padding-left: 25px;
+            font-size: 14px;
+        }
+        #mid2>div:nth-child(2){
+            width: 28%;
+            margin-top: 25px;
+            font-size: 13px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 0 35px 0 35px;
+        }
+        #mid2>div:nth-child(2)>div>div:nth-child(1){
+            width: 30px;
+            height: 35px;
+            text-align: center;
+        }
+        #mid2>div:nth-child(2)>div>div:nth-child(2){
+           margin-left: 25px;
+           margin-top: 0;
+        }
+        #mid2>div:nth-child(2)>div{
+            display: flex
+        }
+        #mid2>div:nth-child(3){
+            width: 12%;
+            background-color:rgb(248, 247, 247); ;
+            height: 50px;
+            text-align: center;
+            position:absolute;
+            left: 73%;
+            bottom: 52%;
+        }
+
+
+
+
         #footer{
             background-color: rgba(100, 100, 111, 0.2);
             padding-bottom: 60px;
-            margin-top: 0;
         }
         #footer>#parant1{
             width: 90%;
@@ -276,14 +311,22 @@
             border-radius: 10px;
             height: 45px;
         }
+        
     </style>
 </head>
 <body>
+    <a href="">
+        <div id="offer">
+            <span>SAVE UP TO</span>
+            <span>50% OFF CLEARANCE*</span>
+            <span>USE CODE: EXTRA</span>
+        </div>
+    </a>
     <div class="nav">
         <div>
             <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
             <a href=""><img src="./location.svg" alt=""> Locaton</a>
-            <a href=""><img src="./user.svg" alt=""> Log in / Register</a>
+            <a href="./login.html"><img src="./user.svg" alt=""> Log in / Register</a>
         </div>
         <div>
             <div id="logo">
@@ -299,36 +342,113 @@
                 <a href="">Sustainability</a>
             </div>
             <div id="cart">
-                <a href=""><img src="./search.svg" alt=""></a>
+                <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
                 <a href=""><img src="./cart.svg" alt=""></a>
             </div>
         </div>
-    </div>
-    <hr>
-    <div id="logHeading">
-        <p>CREAT AN ACCOUNT</p>
         <div>
-            <p>need help?</p>
-            <img src="./help.svg">
+            <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
+            <span>|</span>
+            <span><a href="">FREE RETURN</a> EVERYDAY</span>
         </div>
     </div>
-    <hr>
-    <div id="input">
-        <form action="">
-            <p>Email Adderss</p>
-            <input id="email" type="email" required>
-            <p>First Name</p>
-            <input id="FN" type="text" required>
-            <p>Last Name</p>
-            <input id="LN" type="text" required>
-            <p>Creat A Password <img src="./information.svg"></p>
-            <input id="password" type="password" required>
-            <p><input id="check" type="checkbox">Remember Me</p>
-            <button type="submit" id="sub">CREAT ACCOUNT</button>
-            <p>By creating this account you agree to our</p>
-            <p><a href="">Terms & Conditions</a></p>
-            <p>Already have an clarks account?<span> </span><a href="./login.html">Log In</a></p>
-        </form>
+    <div id="visited">
+       <a href="./index.html"><button>HOME</button></a>
+       <a href="./index.html"><button>SNEAKERS</button></a>
+       <a href="./productPage.html"><button>Nature X Lo</button></a>
+    </div>
+    <div id="mid2">
+        <div>
+            <h2>Product description</h2>
+            <p>Combining expert craftsmanship with technological vision, our Nature X Lo shoe is the ultimate everyday sneaker. With innovative soles that flex as you move, targeted cushioning and breathable knitted grey uppers, feel light and move freely without compromising on style.</p>
+            <p>Last offered at $110.00 on 10/26/2022.</p>
+            <ul>
+                <li>Premium, breathable engineered part-recycled grey knitted upper</li>
+                <li>Removable molded footbed maximizes air circulation and gives customizable all-day comfort</li>
+                <li>Strobel construction creates a lightweight and flexible feel</li>
+                <li>Heel tab assists easy on/off</li>
+                <li>Strategically engineered, part-recycled flex and compression EVA outsole uses unique T-shaped grooves to cushion and absorb shock</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h4>
+                        FREE
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        (on $50+) FedEx SmartPost Delivery (Within 7-10 business days)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $8.95
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        FedEx Ground Delivery (Within 3-6 business days)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $18.00
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        FedEx 2 Day Delivery (Within 2 business days. Order before 2pm EST)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $26.00
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        FedEx Next Day Delivery (Within 1 business day. Order before 2pm EST)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $20.00
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        USPS Delivery (Within 8-12 business days. Available for APO/FPO and US Territory addresses only)                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        FREE
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        Return on all items
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p>* Orders delivering to Hawaii & Alaska must select Express shipping. We are unable to ship FedEx Ground, Next Day or Two Day orders to a PO Box.</p>
+            </div>
+        </div>
+        <div>
+            <h4>Delivery And Return</h4>
+        </div>
     </div>
     <hr>
     <div id="contact">
@@ -360,7 +480,7 @@
             <div>
                 <div>
                     <a href="">WOMEN</a>
-                    <a href="">MEN</a>
+                    <a href="./productsMen.html">MEN</a>
                     <a href="">ORIGINAL</a>
                     <a href="">DISCOVER</a>
                     <a href="">SALE</a>
@@ -424,42 +544,6 @@
     </div>
 </body>
 <script>
-    let userData = JSON.parse( localStorage.getItem("data"));
-    if(userData === null){
-        userData = [];
-    }
-    let emailEl = document.getElementById("email");
-    let fName= document.getElementById("FN");
-    let sName = document.getElementById("LN");
-    let formEl = document.querySelector("form");
-    let passwordEl = document.getElementById("password");
-    formEl .addEventListener( "submit", function(el){
-        el.preventDefault();
-        let obj ={
-            email : emailEl.value,
-            name : fName.value+" "+sName.value,
-            password : passwordEl.value
-        };
-        function check(obj,arr){
-            for(let i = 0 ;i<arr.length;++i){
-                if(obj.email.toUpperCase() === arr[i].email.toUpperCase() && obj.name.toUpperCase() === arr[i].name.toUpperCase() && obj.password.toUpperCase()===arr[i].password.toUpperCase()){
-                    return true;
-                }
-            }
-            return false;
-        }
-        if(check(obj ,userData)===false){
-            userData.push(obj);
-            localStorage.setItem("data" ,JSON.stringify(userData));
-            alert("Account created Successfully");
-            window.location.href="login.html";
-        }else{
-            alert("User Already Exits");
-        }
-        emailEl.value="";
-        fName.value="";
-        sName.value="";
-        passwordEl.value="";
-    }); 
+
 </script>
 </html>
