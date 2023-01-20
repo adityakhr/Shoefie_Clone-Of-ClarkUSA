@@ -216,14 +216,38 @@
         }
         #filter{
             width: 25%;
-        }
-        #filter>*{
-            margin-left: 80px;
-        }
-        #filter>*{
             font-size: 20px;
             color:  rgb(87, 84, 84);
+            margin-left: 45px;
+            padding-right: 45px;
         }
+        #filter p{
+            font-size: 18px;
+            color:rgb(87, 84, 84);
+        }
+        #filter button{
+            width: 50%;
+            margin-left: 0;
+            height: 40px;
+            margin-top: 5px ;
+            font-size: 18px;
+            color:rgb(87, 84, 84);
+            border: 0;
+            background-color: white;
+        }
+        #filter>a>ul{
+            display: none;
+        }
+        #filter>a:hover>ul{
+            display: initial;
+        }
+
+
+
+
+
+
+
         #sort{
             width: 25%;
             height: 40px;
@@ -420,6 +444,24 @@
         <div id="filter">
             <p>Filter By</p>
             <hr>
+            <a>By Price>
+                <ul style="list-style-type: none;">
+                    <li><button id="btn1">$10-$100</button></li>
+                    <li><button id="btn2">$100-$500</button></li>
+                    <li> <button id="btn3">$500-$1000</button></li>
+                    <li><button id="btn4">$1000-$5000</button></li>
+                </ul>
+            </a>
+            <hr>
+            <a>By Material>
+                <ul style="list-style-type: none;">
+                    <li><button id="btn5">Textile</button></li>
+                    <li><button id="btn6">Suede</button></li>
+                    <li> <button  id="btn7">Leather</button></li>
+                    <li><button  id="btn8">Waxy Suede</button></li>
+                </ul>
+            </a>
+            <hr>
         </div>
         <div id="container">
             <div>
@@ -531,7 +573,10 @@
     </div>
 </body>
 <script>
-    let products=[];
+    let products = JSON.parse( localStorage.getItem("dataa")); 
+    if(products===null){
+        products=[];
+    }
     let flag =false;
     let seaEl = document.getElementById("searchfor");
     let seabarEl = document.getElementById("inputText");
@@ -555,6 +600,7 @@
         divEl.innerHTML = "";
         for(let i=0 ; i<data.length ; ++i){
             let div = document.createElement("div");
+            div.setAttribute("id" , "firstDiv");
             let img = document.createElement("img");
             img.setAttribute("src" , data[i].img);
             let img2 = document.createElement("img");
@@ -578,12 +624,106 @@
             let re = await fetch("https://63c67a834ebaa8028546a618.mockapi.io/products");
             let sul = await re.json();
             products = sul;
-            display(sul);
+            display(products);
+            localStorage.setItem("dataa", JSON.stringify(products));
+            let divFEl = document.querySelector("#firstDiv");
+            divFEl.addEventListener("click" , function(){
+                window.location.href="productPage.html";
+            }); 
         }
         catch(error){
             console.log(error);
         }
     }
+    let filter1= document.getElementById("btn1");
+    filter1.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.price>10 && element.price<=100){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter2= document.getElementById("btn2");
+    filter2.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.price>100 && element.price<=500){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter3= document.getElementById("btn3");
+    filter3.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.price>500 && element.price<=1000){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter4= document.getElementById("btn4");
+    filter4.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.price>1000 && element.price<=5000){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter5= document.getElementById("btn5");
+    filter5.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.material === "Textile"){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter6= document.getElementById("btn6");
+    filter6.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.material === "Suede"){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter7= document.getElementById("btn7");
+    filter7.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.material === "Leather"){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+    let filter8= document.getElementById("btn8");
+    filter8.addEventListener("click" ,function(){
+        data = products.filter((element , index)=>{
+            if(element.material === "Waxy Suede"){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        display(data);
+    });
+
     fetchdata();
     sortEl.addEventListener("change" , function(){
                 function compare(a,b){

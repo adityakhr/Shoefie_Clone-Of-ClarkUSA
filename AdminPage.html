@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+         #logHeading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logHeading>p:nth-child(1){
+            font-size: 50px;
+            margin-left: 7%;
+            background-color: ;
+        }
+        #parant{
+            width: 100%;
+            display: flex;
+
+        }
+        #parant>div:nth-child(1){
+            width: 40%;
+        }
+        form{
+            width: 100%;
+            font-size: 30px;
+        }
+        form p{
+            height: 5px;
+            text-align: start;
+        }
+        form>input{
+            width: 80%;
+            height: 50px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 20px;
+            color:rgb(121, 114, 114);
+        }
+        form>button{
+            display: block;
+            width: 82%;
+            height: 50px;
+            margin-top: 25px;
+            color: white;
+            font-size: 25px;
+            background-color: #1E88E5;
+        }
+        form>button:hover{
+            background-color: black;
+        }
+        #parant>div:nth-child(2){
+            width: 60%;
+        }
+        #parant table {
+            width: 100%;
+        }
+        #parant table thead{
+            background-color: teal;
+        }
+        #parant table thead>tr{
+            height:50px;
+        }
+        #parant table thead>tr>th{
+            width: 10%
+        }
+        #parant table tbody>tr:nth-child(even)>td~* {
+            background-color: black;
+            color: white;
+        }
+        #parant table tbody tr {
+            height: 40px;
+        }
+        #parant table tbody>tr>th{
+            width: 10%
+        }
+        #parant table tbody img{
+            width: 100%;
+            height: 100%;
+        }
+        table{
+            text-align: center;
+        }
+        #footer{
+            background-color: rgba(100, 100, 111, 0.2);
+            padding-bottom: 60px;
+            margin-top: 0;
+        }
+        #footer>#parant1{
+            width: 90%;
+            margin: auto;
+        }
+        #footer>#parant1>div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        #footer>#parant1>div:nth-child(1)>div{
+            width: 70%;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+            justify-content: end;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1)>a>img{
+            width:25px;
+            margin: 0 5px 0 5px;
+        }
+        #footer>#parant1>div:nth-child(3){
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #footer>#parant1>div:nth-child(3)>div{
+            width: 70%;
+
+        }
+        #footer>#parant1>div:nth-child(3) a{
+            display: block;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #footer2{
+            display: flex;
+            background-color: rgb(47, 45, 45);
+        }
+        #footer2>div:nth-child(1){
+            width: 40%;
+            padding-bottom: 250px;
+        }
+        #footer2>div:nth-child(1){
+            text-align: center;
+            margin-top: 25px;
+
+        }
+        #footer2>div:nth-child(1)>a{
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            font-size: 12px;
+        }
+        #footer2>div:nth-child(2){
+            width: 50%;
+            margin-left: 120px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(1){
+            margin-top: 28px;
+            color: white;
+            font-size:13px ;
+            width: 100%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(2){
+            color: white;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(1){
+            width: 16%;
+            margin-left: 20%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+            width: 18%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(3){
+            width: 8%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+            width: 10%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(5){
+            width: 7%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+            width: 12%;
+            border-radius: 10px;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div id="logHeading">
+        <p>Admin </p>
+   </div>
+    <hr>
+    <div id="parant">
+        <div>
+            <form action="">
+                <p>Name</p>
+                <input type="text" placeholder="Please Enter The Name Of Product" id="na" required>
+                <P>Category</P>
+                <input type="text" placeholder="Please Enter The Product's Category" id="cat" required>
+                <p>Image</p>
+                <input type="text" placeholder="Please Enter The  URL Of Product's Image Only" id="img" required>
+                <p>Material</p>
+                <input type="text" placeholder="Please Enter The Material Of Product" id="mat" required>
+                <p>Price</p>
+                <input type="number" placeholder="Please Enter The Price Of Product" id="pr" required>
+                <button type="submit"> Done</button>
+            </form>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            IMAGE
+                        </th>
+                        <th>
+                            NAME
+                        </th>
+                        <th>
+                            CATEGORY
+                        </th>
+                        <th>
+                            MATERIAL
+                        </th>
+                        <th>
+                            PRICE
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="parant1">
+            <div>
+                <div><p>DEPARTMENT</p></div>
+                <div><p>HELP</p></div>
+                <div><p>ABOUT CLARKS</p></div>
+                <div><p>CLAEKSUSA.COM</p></div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.svg"> </a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./youtube.svg"></a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <a href="">WOMEN</a>
+                    <a href="">MEN</a>
+                    <a href="">ORIGINAL</a>
+                    <a href="">DISCOVER</a>
+                    <a href="">SALE</a>
+                </div>
+                <div>
+                    <a href="">Product Recall</a>
+                    <a href="">Cusotmer service</a>
+                    <a href="">Shipping 7 Delivery</a>
+                    <a href="">Order Lookup</a>
+                    <a href="">Return</a>
+                    <a href="">Compare At Pricing</a>
+                    <a href="">FAQs</a>
+                    <a href="">ID ME FAQs</a>
+                    <a href="">In-Store Rewards Program Terms</a>
+                    <a href="">In-Store Rewards Program FAQs</a>
+                    <a href="">Shoe Care Guide</a>
+                </div>
+                <div>
+                    <a href="">About Us</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Affiliate Program</a>
+                    <a href="">Blog</a>
+                    <a href="">Career</a>
+                    <a href="">California - Do Not Sell My Info</a>
+                    <a href="">California Supply Chains Act</a>
+                    <a href="">Corporate Responsibility</a>
+                    <a href="">Coronavirus Statement</a>
+                    <a href="">Technologies</a>
+                </div>
+                <div>
+                    <a href="">Gift Cards</a>
+                    <a href="">Gift Card Balance</a>
+                    <a href="">Size Guide</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer2">
+        <div>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">CCPA Privacy Policy</a>
+        </div>
+        <div>
+            <div>
+                <p>© C. & J. Clark International 2022. Clarks and the Clarks logo are registered trademarks of C. & J. Clark International Limited.</p>
+            </div>
+            <div>
+                <p>C&J Clark America, Inc., 140 Kendrick Street, Needham, MA 02494</p>
+            </div>
+            <div>
+                <img src="./paypal.png" alt="">
+                <img src="./visa.png" alt="">
+                <img src="./mastercard.png" alt="">
+                <img src="./discover.jpeg" alt="">
+                <img src="./AE.png" alt="">
+                <img src="./klarna.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    let data = JSON.parse( localStorage.getItem("dataa"));
+    if(data === null){
+        data = [];
+    }
+    let tbodyEl = document.querySelector("tbody");
+    function display(data){
+        tbodyEl.innerHTML="";
+        for(let i=0 ; i<data.length ; ++i){
+            let tr = document.createElement("tr");
+            let th1 =document.createElement("td");
+            let img = document.createElement("img");
+            img.setAttribute("src" , data[i].img);
+            th1.append(img);
+            let th2 = document.createElement("td");
+            th2.innerText = data[i].name;
+            let th3 = document.createElement("td");
+            th3.innerText = data[i].category;
+            let th4 = document.createElement("td");
+            th4.innerText = data[i].material;
+            let th5 = document.createElement("td");
+            th5.innerText = data[i].price;
+            tr.append(th1, th2, th3, th4, th5)
+            tbodyEl.append(tr);
+        }
+    }
+    display(data);
+    let formEl = document.querySelector("form");
+    formEl.addEventListener("submit" , function(el){
+        el.preventDefault();
+        let obj = {
+            name:document.getElementById("na").value,
+            category:document.getElementById("cat").value,
+            img:document.getElementById("img").value,
+            material:document.getElementById("mat").value,
+            price: document.getElementById("pr").value
+        }
+        data.push(obj);
+        localStorage.setItem("dataa" , JSON.stringify(data));
+        alert("Item Added Successfully");
+    })
+</script>
+</html>

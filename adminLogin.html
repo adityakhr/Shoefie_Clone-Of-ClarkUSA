@@ -8,74 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Shoefie Official Site/Signup</title>
+    <title>Shoefie Official Site/Admin Login</title>
     <style>
         body{
             font-family: poppins;
             margin: 0;
             padding: 0;
         }
-        .nav>div:nth-child(1){
-            height: 50px;
-            background-color:rgb(246, 244, 244);
-            display: flex;
-            align-items: center;
-            justify-content: end;
-        }
-        .nav>div:nth-child(1)>a{
-            text-decoration: none;
-            color: rgb(87, 84, 84);
-            font-size: 13px;
-            margin: 0 15px 0 15px;
-        }
-        .nav>div:nth-child(1)>a>img{
-            height: 21px;
-            margin: 0 15px 0 15px;
-        }
-        .nav>div:nth-child(2){
-            width: 100%;
-            display: flex;
-            align-items: center;
-            box-shadow: rgba(100, 100, 111, 0.2);
-        }
-        #logo{
-            text-align: center;
-            margin-top: 10px;
-        }
-        #links{
-            width: 40%;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #links>a{
-            text-decoration: none;
-            color: rgb(87, 84, 84);
-            font-size: 15px;
-        }
-        #cart>a{
-            margin-left: 0;
-            text-decoration: none;
-            color: rgb(87, 84, 84);
-            font-size: 15px;
-        }
-        #cart>a>img{
-            width: 35px;
-        }
-        #cart{
-            width: 8%;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left: 25%
-        }
-        .nav>div:nth-child(2)>div:nth-child(1){
-            width: 20%;
-        }
-        .nav>div:nth-child(2)>div:nth-child(1)>a>img{
-            width: 130px;
-            border-radius: 40px;
-        }
+        
         #logHeading{
             display: flex;
             justify-content: space-between;
@@ -109,7 +49,7 @@
             height: 35px;
             margin-bottom: 10px;
         }
-        #input img{
+        #input>form img{
             width: 20px;
         }
         #input>form>a{
@@ -123,59 +63,25 @@
             margin: 30px 0 0 0;
             border: 0 ;
             color: white;
-            background-color: grey;
+            background-color: #1E88E5;
             font-size: 18px;
         }
         #input>form>button:hover{
-            background-color: rgb(157, 153, 153);
+            background-color: grey;
             cursor: pointer;
         }
-        
+        #input>form>p:nth-last-child(1){
+            text-align: center;
+        }
         #input>form>p:nth-last-child(3){
-            margin-bottom: 0px;
+            margin-top: 30px;
+            font-size: 18px;
+            color: rgb(156, 150, 150);
         }
         #input>form>p>a{
             color: #1E88E5;
         }
-        #input>form>p:nth-last-child(2){
-            margin-top: 0;
-        }
-        #contact{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 18px;
-        }
-        #contact>div{
-            margin: 0 30px 0 150px;
-        }
-        #contact>div:nth-child(1)>span{
-            margin: 0 20px 0 20px;
-        }
-        #contact>div:nth-child(1)>a{
-            text-decoration: none;
-            color: rgb(87, 84, 84);
-        }
-        #contact>div:nth-child(2){
-            display: flex;
-            font-weight: bold;
-            width: 40%;
-        }
-        #contact>div:nth-child(2)>form{
-            margin-left: 20px;
-        }
-        #contact>div:nth-child(2)>form{
-            width: 60%;
-        }
-        #contact>div:nth-child(2)>form>input{
-            height: 25px;
-            width: 90%;
-        }
-        #contact>div:nth-child(2)>form>button{
-            height: 30px;
-            background-color: white;
-            border: 1px solid rgb(87, 84, 84);
-        }
+        
         #footer{
             background-color: rgba(100, 100, 111, 0.2);
             padding-bottom: 60px;
@@ -279,69 +185,26 @@
     </style>
 </head>
 <body>
-    <div class="nav">
-        <div>
-            <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
-            <a href=""><img src="./location.svg" alt=""> Locaton</a>
-            <a href=""><img src="./user.svg" alt=""> Log in / Register</a>
-        </div>
-        <div>
-            <div id="logo">
-                <a href="./index.html"><img src="./Logo.png"></a>
-            </div>
-            <div id="links">
-                <a href="">Women</a>
-                <a href="./productsMen.html">Men</a>
-                <a href="">Kids</a>
-                <a href="">Originals</a>
-                <a href="">Accessories</a>
-                <a href="">Sale</a>
-                <a href="">Sustainability</a>
-            </div>
-            <div id="cart">
-                <a href=""><img src="./search.svg" alt=""></a>
-                <a href=""><img src="./cart.svg" alt=""></a>
-            </div>
-        </div>
-    </div>
     <hr>
     <div id="logHeading">
-        <p>CREAT AN ACCOUNT</p>
+        <p>Admin Log in</p>
         <div>
-            <p>need help?</p>
+            <p>need help</p>
             <img src="./help.svg">
         </div>
     </div>
     <hr>
     <div id="input">
-        <form action="">
+        <form id="form">
             <p>Email Adderss</p>
-            <input id="email" type="email" required>
-            <p>First Name</p>
-            <input id="FN" type="text" required>
-            <p>Last Name</p>
-            <input id="LN" type="text" required>
-            <p>Creat A Password <img src="./information.svg"></p>
-            <input id="password" type="password" required>
-            <p><input id="check" type="checkbox">Remember Me</p>
-            <button type="submit" id="sub">CREAT ACCOUNT</button>
-            <p>By creating this account you agree to our</p>
-            <p><a href="">Terms & Conditions</a></p>
-            <p>Already have an clarks account?<span> </span><a href="./login.html">Log In</a> or <a href="./">Admin Log In</a></p>
+            <input type="email" id="email" required  >
+            <p>Password <img src="./information.svg"></p>
+            <input type="password" id="password" required>
+            <a href="">Forget Your Password?</a>
+            <p><input type="checkbox" name="" id="">Remember Me</p>
+            <button type="submit">LOG IN</button>
+            <p>Don't have a clarks account? <a href="./register.html">CREAT AN ACCOUNT</a></p>
         </form>
-    </div>
-    <hr>
-    <div id="contact">
-        <div>
-            <a href="#">SCROLL TO TOP</a><span>|</span><a href="#">CONTACT US</a>
-        </div>
-        <div>
-            <span>SHOEFIE NEWSLATTER</span>
-            <form >
-                <input type="email">
-                <button>></button>
-            </form>
-        </div>
     </div>
     <div id="footer">
         <div id="parant1">
@@ -425,41 +288,23 @@
 </body>
 <script>
     let userData = JSON.parse( localStorage.getItem("data"));
-    if(userData === null){
+    if(userData===null){
         userData = [];
     }
     let emailEl = document.getElementById("email");
-    let fName= document.getElementById("FN");
-    let sName = document.getElementById("LN");
+    let passwordEl = document.getElementById("password")
     let formEl = document.querySelector("form");
-    let passwordEl = document.getElementById("password");
-    formEl .addEventListener( "submit", function(el){
+    formEl.addEventListener( "submit" , function(el){
         el.preventDefault();
-        let obj ={
-            email : emailEl.value,
-            name : fName.value+" "+sName.value,
-            password : passwordEl.value
-        };
-        function check(obj,arr){
-            for(let i = 0 ;i<arr.length;++i){
-                if(obj.email.toUpperCase() === arr[i].email.toUpperCase() && obj.name.toUpperCase() === arr[i].name.toUpperCase() && obj.password.toUpperCase()===arr[i].password.toUpperCase()){
-                    return true;
-                }
-            }
-            return false;
+        if(emailEl.value==="ad@gmail.com" && passwordEl.value==="Ad123456"){
+            alert("Log In Successful");
+            window.location.href="AdminPage.html";
         }
-        if(check(obj ,userData)===false){
-            userData.push(obj);
-            localStorage.setItem("data" ,JSON.stringify(userData));
-            alert("Account created Successfully");
-            window.location.href="login.html";
-        }else{
-            alert("User Already Exits");
+        else{
+            alert("Invalid Information");
         }
         emailEl.value="";
-        fName.value="";
-        sName.value="";
-        passwordEl.value="";
-    }); 
+        passwordEl.value ="";
+    });
 </script>
 </html>

@@ -204,9 +204,9 @@
             background-color:rgb(248, 247, 247); ;
             height: 50px;
             text-align: center;
-            position:absolute;
-            left: 73%;
-            bottom: 52%;
+            position:relative;
+            right: 23%;
+            top: -8px;
         }
 
 
@@ -311,7 +311,201 @@
             border-radius: 10px;
             height: 45px;
         }
-        
+        #mid1{
+            width:100%;
+            margin: 25px 0 25px 0;
+            display: flex;
+        }
+        #one{
+            width: 60%;
+            text-align: center;
+            display: flex;
+        }
+        #arr{
+            width: 20%;
+            margin-left: 80px;
+        }
+        #arr>button{
+            width: 80%;
+            height: 25px;
+            background-color: white;
+            border: 0;
+        }
+        #arr img{
+            width: 80%;
+        }
+        #display{
+            width:80%;
+        }
+        #display img{
+            width: 100%;
+        }
+        #arr>button>img{
+            width: 15px;
+        }
+        #two{
+            width: 33%;
+        }
+        #two>h2{
+            height: 20px;
+        }
+        #two>p{
+            height: 10px;
+        }
+        #two>div:nth-child(3)>img{
+            width: 3%;
+        }
+        #two>div:nth-child(3){
+            margin-bottom: 25px;
+            display: flex;
+        }
+        #two>div:nth-child(5){
+            display: flex;
+        }
+        #two>span{
+            font-size: 18px;
+        }
+        #two>span>span{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        #two>div:nth-child(5){
+            margin: 25px 0 25px 0;
+        }
+        #two>div:nth-child(5)>img{
+            width: 12%;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        #two>div:nth-child(5)>img{
+            width: 12%;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin-left: 8px;
+        }
+        #two span:nth-child(6){
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #two span:nth-child(6)>span{
+            margin-right: 15%;
+            color: skyblue;
+        }
+        #two>div:nth-child(7){
+            margin: 25px 0 25px 0 ;
+            display: grid;
+            grid-template-columns: repeat(5,12%);
+            grid-template-rows: repeat(3,45px);
+            gap:10px 10px;
+
+        }
+        #two>div:nth-child(7)>button{
+            background-color: white;
+            color: rgb(89, 86, 86);
+            border-radius: 10px;
+            border: 1px solid rgb(89, 86, 86);
+        }
+        #two>div:nth-child(7)>button:hover{
+            cursor: pointer;
+           background-color: aliceblue;
+        }
+        #two>p:nth-child(9)>button{
+            width: 18%;
+            height: 55px;
+            background-color: white;
+            color: rgb(89, 86, 86);
+            border-radius: 10px;
+            border: 1px solid rgb(89, 86, 86);
+        }
+        #two>p:nth-child(9)>button{
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+        #two>#check{
+            width: 87% ;
+            height: 50px;
+        }
+        #two>#check>button{
+            margin-top: 50px;
+            margin-bottom: 25px;
+            height: 100%;
+            width: 100%;
+            font-size: 23px;
+            background-color: #1E88E5;
+            color: white;
+            font-weight: 500;
+        }
+        #two>div:nth-last-child(1){
+            width: 87% ;
+            margin-top: 70px;
+            background-color: rgb(252, 177, 190);
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+        #two>div:nth-last-child(1) img{
+            margin-left: 0px;
+            width: 20%; 
+            height: 50px;
+        }
+        #two>div:nth-last-child(1)>span>a{
+            margin-left: 25px;
+        }
+        #mid3{
+            width: 90%;
+            margin:auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #mid3>div:nth-child(1){
+            width: 49%;
+        }
+        #mid3>div:nth-child(1)>button{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 0;
+            font-size: 25px;
+            color: rgb(96, 93, 93);
+        }
+        #mid3>div:nth-child(1)>button:hover{
+            cursor: pointer;
+        }
+        #mid3>div:nth-child(2){
+            width: 49%;
+        }
+        #mid3>div:nth-child(2)>button{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 0;
+            font-size: 25px;
+            color: rgb(96, 93, 93);
+        }
+        #mid4>table{
+            width: 100%;
+            display: none;
+        }
+        #mid4>table tr td{
+            width: 100%;
+             
+            text-align: start;
+        }
+        #mid4>table tr:nth-child(even){
+            background-color:rgb(244, 244, 244); ;
+        }
+        #mid4>table>tbody>tr{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        #mid4table>tbody>tr>td:nth-child(2){
+            font-weight: bolder;
+
+        }
     </style>
 </head>
 <body>
@@ -354,8 +548,65 @@
     </div>
     <div id="visited">
        <a href="./index.html"><button>HOME</button></a>
-       <a href="./index.html"><button>SNEAKERS</button></a>
+       <a href="./productsMen.html"><button>MEN</button></a>
+       <a href="./productsMen.html"><button>SNEAKERS</button></a>
        <a href="./productPage.html"><button>Nature X Lo</button></a>
+    </div>
+    <div id="mid1">
+        <div id="one">
+            <div id="arr">
+                <button id="up"><img src="./up-arrow.svg" alt=""></button>
+                <div id="images">
+
+                </div>
+                <button id="down"><img src="./down-arrow.svg" alt=""></button>
+            </div>
+            <div id="display">
+
+            </div>
+        </div>
+        <div id="two">
+            <h2>Nature X Lo Grey Knit</h2>
+            <p>$3200</p>
+            <div>
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <span>(1)</span>
+            </div>
+            <span>COLOR <span>Gray Knit</span></span>
+            <div>
+                <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169143_W_1?wid=80&fmt=webp" alt="">
+                <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?wid=80&fmt=webp" alt="">
+            </div>
+            <span>SELECT SIZE <span><a href="#">Size Guide</a></span></span>
+            <div>
+                <button>7</button>
+                <button>7½</button>
+                <button>8</button>
+                <button>8½</button>
+                <button>9</button>
+                <button>9½</button>
+                <button>10</button>
+                <button>10½</button>
+                <button>11</button>
+                <button>11½</button>
+                <button>12</button>
+                <button>13</button>
+            </div>
+            <span>SELECT WIDTH</span>
+            <p><button>MEDIUM</button></p>
+            <div id="check">
+                <button>Add to shopping bag</button>
+            </div>
+            <div>
+                <img src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo" alt="">
+                <span>4 Interest-free payments of $17.49<a href="#">Learn more</a> </span>
+
+            </div>
+        </div>
     </div>
     <div id="mid2">
         <div>
@@ -449,6 +700,62 @@
         <div>
             <h4>Delivery And Return</h4>
         </div>
+    </div>
+    <div id="mid3">
+        <div>
+            <button id="show">Product Details</button>
+            <hr>
+        </div>
+        <div id="payment">
+            <button id="pay">Product Details</button>
+            <hr>
+        </div>
+    </div>
+    <div id="mid4">
+        <table id="table">
+            <tbody>
+                <tr>
+                    <td>
+                        Upper Material
+                    </td>
+                    <td>
+                        Textile
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lining Material
+                    </td>
+                    <td>
+                        Textile
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sole Material
+                    </td>
+                    <td>
+                        EVA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fastening Type
+                    </td>
+                    <td>
+                        Lace
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Removalbe Insole
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <hr>
     <div id="contact">
@@ -544,6 +851,82 @@
     </div>
 </body>
 <script>
-
+    let imgs = [
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_10?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_11?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_12?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_13?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_14?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_15?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_16?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_17?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_2?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_3?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_4?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_5?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_6?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_7?wid=180&hei=180&fmt=webp",
+        ""
+    ];
+    for(let i = 0 ; i<5 ; ++i){
+        let c = document.createElement("img");
+        c.setAttribute("src" , imgs[i]);
+        document.getElementById("images").append(c);
+    }
+    let counter = 0;
+    let img2 = document.createElement("img");
+    img2.setAttribute("src" , imgs[counter]);
+    document.getElementById("display").append(img2);
+    let btndown = document.getElementById("down");
+    btndown.addEventListener("click" , function(){
+        if(counter<15){
+            if(counter===4){
+            document.getElementById("images").innerHTML="";
+            for(let i = 5 ; i<10 ; ++i){
+                let c = document.createElement("img");
+                c.setAttribute("src" , imgs[i]);
+                document.getElementById("images").append(c);
+            }
+        }
+        if(counter===9){
+            document.getElementById("images").innerHTML="";
+            for(let i = 10 ; i<15 ; ++i){
+                let c = document.createElement("img");
+                c.setAttribute("src" , imgs[i]);
+                document.getElementById("images").append(c);
+            }
+        }
+        ++counter;
+        console.log(counter);
+        if(counter<15){
+            img2.setAttribute("src" , imgs[counter]);
+            document.getElementById("display").append(img2);
+        }
+        }
+    });
+    let btnup =document.getElementById("up");
+    btnup.addEventListener("click" ,function(){
+        if(counter>=0){
+            img2.setAttribute("src" , imgs[counter]);
+            document.getElementById("display").append(img2);
+            --counter
+        }
+    });
+    let showbtn = document.getElementById("show");
+    showbtn.addEventListener("click" , function(){
+        if(document.getElementById("table").style.display="none"){
+            document.getElementById("table").style.display="initial"
+        }else{
+            document.getElementById("table").style.display="none"
+        }
+        showbtn.addEventListener("click" , function(){
+        if(document.getElementById("table").style.display="none"){
+            document.getElementById("table").style.display="initial"
+        }else{
+            document.getElementById("table").style.display="none"
+        }
+    });
+    });
 </script>
 </html>
