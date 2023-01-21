@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Shoefie Official Site</title>
     <style>
         body{
             font-family: poppins;
@@ -56,7 +55,6 @@
             display: flex;
             align-items: center;
             box-shadow: rgba(100, 100, 111, 0.2);
-            
         }
         #logo{
             text-align: center;
@@ -111,40 +109,75 @@
         .nav>div:nth-child(3)>span>a{
             color: rgb(87, 84, 84);
         }
-        #top_section{
-            text-align: center;
-            padding: 0 18% 0 18%;
+        #logHeading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        #top_section h1{
-            font-weight:lighter;
-            color: rgb(87, 84, 84);;
+        #logHeading>p:nth-child(1){
+            font-size: 50px;
+            margin-left: 6%;
+            color: rgb(87, 84, 84);
         }
-        #top_section p{
-            font-weight:lighter;
-            font-size: 18px;
+        #logHeading>div{
+            margin-right: 7%;
+            display: grid;
+            grid-template-columns: 1 , 100%;
+            width: 30%;
         }
-        #top_section a{
-            text-decoration: none;
+        #logHeading>div p ,#logHeading>div>div {
+            text-align: end;
         }
-        #top_section button{
-            height: 50px;
-            width: 28%;
-            background-color: white;
-            border: 1px solid rgb(111, 109, 109);
-            font-size: 15px;
-            margin-left: 25px;
-            font-weight: lighter;
+        #logHeading>div p{
+            height: 8px;
         }
-        #top_section button:hover{
-            background: rgb(87, 84, 84);
-            color: white;
+        #logHeading>div>div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            display: inline;
+            font-weight: bolder;
+        }
+        #logHeading>div>div img{
+            width: 15px;
+            height: 15px;
+        }
+        #logHeading>div>button{
+            width: 100%;
+            height: 40px;
+            margin-top: 25px;
+            background-color: #1E88E5;
             border: 0;
+            color: white;
         }
+        #mid1{
+            width: 98%;
+            margin: auto;
+            background-color: rgb(246, 244, 244);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(87, 84, 84);
+            margin: 50px 0 50px 0 ;
+        }
+        #mid1 img{
+            color: rgb(87, 84, 84);
+            margin-right: 15px;
+        }
+
+
+
+
+
+
+
+
         #contact{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
         #contact>div{
             margin: 0 30px 0 150px;
@@ -179,6 +212,7 @@
         #footer{
             background-color: rgba(100, 100, 111, 0.2);
             padding-bottom: 60px;
+            margin-top: 0;
         }
         #footer>#parant1{
             width: 90%;
@@ -275,248 +309,116 @@
             border-radius: 10px;
             height: 45px;
         }
-        #product{
-            display:grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-        }
-        #product>div{
-            padding-bottom: 20px;
-        }
-        #product>div:hover{
-            cursor: pointer;
-        }
-        #offer2{
-            width:99%;
-            height: 70px;
+        #main{
+            width: 90%;
             margin: auto;
-            background-color: rgb(246, 187, 197);
+            margin-bottom: 25px;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
         }
-        #offer2>span{
-           font-size: 18px;
+        #mainchild{
+            width: 60%;
+            padding: 50px 25px 50px 25px;
+            display: flex;           
         }
-        #offer2>img{
-            width: 90px;
-            margin-right: 70px;
-            margin-left: 5px;
-        }
-        #a2{
-            width: 98%;
-            display: block;
-            margin: auto;
-        }
-        #mid2{
-            text-align: center;
-            margin-bottom:15px ;
-            padding: 8px 28% 25px 28%;
-            background-color:rgba(167, 167, 172, 0.2); ;
-        }
-        #mid2>div>button{
-            width: 200px;
-            height: 40px;
-            margin-right: 25px;
-            font-size: 18px;
-            color:rgb(113, 106, 106) ;
-            background-color: white;
-            border: 1px solid rgb(175, 169, 169);
-        }
-        #mid3{
-            width: 100%;
+        #mainchild>div:nth-child(2){
+            width: 40%;
+            padding: 50px 25px 50px 25px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            margin-left: 45px;
         }
-        #mid3>div{
-            width: 50%;
-            text-align: center;
-            margin-bottom: 150px;
-        }
-        #mid3 img{
-            width: 98%;
-
-        }
-        #mid3>div h1{
-            font-size: 28px;
-        }
-        #mid3 button{
-            width: 250px;
-            height: 30px;
-            margin-right: 25px;
-            font-size: 15px;
-            color:rgb(113, 106, 106) ;
-            background-color: white;
-            border: 1px solid rgb(175, 169, 169);
-        }
-        #mid3 button:hover{
-            color:white;
-            background-color: black;
-        }
-        #mid3 p{
-            padding: 0 5% 0 5%;
-        }
-        #mid4{
-            text-align: center;
-            background-color:rgb(222, 211, 195);
-            padding-bottom: 80px;
-        }
-        #mid4 img{
-            display: block;
-            width: 100%;
-            margin-bottom: 0px;
-        }
-        #mid4>h1{
-            font-size: 45px;
-            margin-bottom: 0;
-        }
-        #mid4 p , #mid4 h1 , #mid4 div:nth-child(4){
-            padding: 0 28% 0 28%;
-        }
-        #mid4 button:nth-child(1){
-            width: 300px;
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div{ 
             height: 35px;
-            margin-right: 25px;
-            font-size: 16px;
-            color:rgb(113, 106, 106) ;
-            background-color: white;
-            border: 1px solid rgb(175, 169, 169);
-        }
-        #mid4 button:nth-child(2){
-            width: 200px;
-            height: 35px;
-            margin-right: 25px;
-            font-size: 16px;
-            color:rgb(113, 106, 106) ;
-            background-color: white;
-            border: 1px solid rgb(175, 169, 169);
-        }
-        #mid4 button:hover{
-            cursor: pointer;
-        }
-        #mid5{
-            width: 99%;
-            margin: auto;
-            margin-top: 28px;
-            margin-bottom: 35px;
-            height: 60px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            background-color:rgb(38, 95, 142);
-        }
-        #mid5>div{
-            width: 99%;
-            height: 48px;
-            margin: auto;
-            border: 1px solid white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: 500;
-        }
-        #mid5>div>a{
-            color: white;
-        }
-        #mid5>div>a>span{
-            color: white;
-            font-weight: bolder;
-            margin-left: 75px;
-        }
-        #mid6{
-            width: 98%;
-            margin: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-        
-        #mid6 img{
-            width: 95%;
-        }
-        #mid6 button{
-            height: 50px;
-            width:130px ;
-            background-color: white;
-            border: 0;
+            margin: 30px 0 15px 0;
             
         }
-        #mid6>div>button{
-            position: relative;
-            top: -180px;
-        }
-        #mid6>div>button::before{
-            content: "";
-            position: absolute;
-            left:16%;
-            top: 38px;
-            width: 0%;
-            height: 2px;
-            background-color: black;
-        }
-        #mid6>div>button:hover::before{
-            width: 70%;
-            transition: all .2s linear;
-        }
-        #mid6 button:hover{
-            cursor: pointer;
-        }
-        #mid1{
-            width: 95%;
-            margin: auto;
-            background-color:rgb(234, 139, 139);
-            margin-bottom: 25px;
-        }
-        #mid1>div{
-            width: 50%;
-            min-height: 350px;
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div p{ 
             text-align: center;
-            margin: auto;
-            padding-top: 1px;
-            background-color: #efb9b9;;
-        }
-        #mid1 h1:nth-child(1){
-            font-size: 40px;
-            height: 35px;
-        }
-        #mid1 p:nth-child(2){
-            font-size: 30px;
-            height: 0px;
-            font-weight: bold;
-        }
-        #mid1 p:nth-child(3){
-            font-size:100px;
-            margin-top: 0;
-            height: 40px;
-            font-weight: bolder;
-        }
-        #mid1>div>div:nth-child(4){
-            background-color: black;
-            font-size: 25px;
-            color: white;
-            margin: 0 15% 0 15%;
-        }
-        #mid1 p:nth-child(5){
-            font-weight: bold;
-        }
-        #mid1>div>div:nth-child(6){
+            font-size: 20px;
+            background-color: white;
+            height: 42px;
+            width: 42px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 1px solid rgb(87, 84, 84);
+            color:rgb(87, 84, 84) ;
         }
-        #mid1>div>div:nth-child(6)>button{
-            width: 20%;
-            margin-left: 15px;
-            height: 35px;
-            background-color: black;
-            color: white;
+        #mainchild>div:nth-child(2)>div:nth-child(1) h4 , #mainchild>div:nth-child(2)>div:nth-child(1) p{ 
+            height: 5px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div button{ 
+            background-color: white;
+            font-size: 25px;
+            height: 45px;
+            width: 45px;
+            border: 1px solid rgb(87, 84, 84);
+            margin: 0 5px 0 5px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1) a{ 
+            color:rgb(117, 152, 165);
+        }
+        #main>div:nth-child(2){
+            width: 35%;
+        }
+        #main>div:nth-child(2)>div:nth-child(2),#main>div:nth-child(2)>div:nth-child(4),#main>div:nth-child(2)>div:nth-child(6){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main>div:nth-child(2)>div:nth-child(6){
+            font-weight: bold;
             font-size: 18px;
+            color: rgb(87, 84, 84);
         }
-        #mid1 p:nth-last-child(1){
-            font-size: 12px;
-            height: 35px;
+        #main>div:nth-child(2)>img{
+            width: 30%;
+        }
+        #main>div:nth-child(2)>button{
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-color: #1E88E5;
+            border: 0;
+            color: white;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) {
+            margin: 25px 0 50px 0;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) p{
+            font-size: 14px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) input{
+            width: 60%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84) ;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) button{
+            width: 30%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84) ;
+            color:rgb(87, 84, 84) ;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) button:hover{
+            background-color: grey ;
+            transition: all .5s linear;
+            color:white ;
+        }
+        
+        #main>div:nth-child(2) img{
+            margin-left: 30%;
+            width: 40%;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -530,9 +432,9 @@
     </a>
     <div class="nav">
         <div>
-            <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
+            <a href=""> <img src="./truck.svg" alt=""> Track Orders</a>
             <a href=""><img src="./location.svg" alt=""> Locaton</a>
-            <a href="./login.html"><img src="./user.svg" alt=""> Log in / Register</a>
+            <a href="./login.html"><img src="./user.svg" alt=""> Log In / Register</a>
         </div>
         <div>
             <div id="logo">
@@ -549,7 +451,7 @@
             </div>
             <div id="cart">
                 <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
-                <a href="./Emptycart.html"><img src="./cart.svg" alt=""></a>
+                <a href=""><img src="./cart.svg" alt=""></a>
             </div>
         </div>
         <div>
@@ -558,135 +460,84 @@
             <span><a href="">FREE RETURN</a> EVERYDAY</span>
         </div>
     </div>
+    <div id="logHeading">
+        <p>My SHOPPING BAG</p>
+        <div>
+            <p>BAG ID:679742264</p>
+            <div>
+                <p>need help? <img src="./help.svg"></p>
+            </div>
+            <button id="btn1">CHECK OUT</button>
+        </div>
+    </div>
     <div id="mid1">
-        <div>
-            <h1>WINTER CLEARANCE</h1>
-            <p>SAVE UP TO</p>
-            <P>50% OFF*</P>
-            <div>TAKE AN EXTRA 30% OFF MARKDOWNS</div>
-            <p>USE CODE: EXTRA</p>
-            <div>
-                <button>Shop Women</button>
-                <button>shop Men</button>
-                <button>Shop Kids</button>
-                <button>Shop All</button>
-            </div>
-            <p>For more details see <a href="">Terms & Conditions</a></p>
-        </div>
+        <img src="./truck.svg" alt="">
+        <span>FREE SHIPPING ON ALL $50+ ORDERS + FREE RETURNS EVERYDAY</span>
     </div>
-    <div id="mid">
-        <img id="a2" src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22WOriannaMidDarkSandSuedeOnsiteBannerDesktop1500x500?fmt=webp&wid=1500" alt="">
-    </div>
-    <div id="mid2">
-        <h1>
-            WINTER REBOOT
-        </h1>
-        <p>
-            Reworking a staple shoe in iconic style, meet our Orianna Mid boot. Crafted in responsibly sourced dark sand suede for a premium look, its chunky profile ticks the box for on-trend, while snug faux shearling linings keeps toes toasty when braving cooler climes. Clarks’ stitching detail nods to our heritage, making every tread timeless, too.
-        </p>
+    <div id="main">
         <div>
-            <button>
-                Shop Women's Boots
-            </button>
-            <button>
-                Shop Men's Boots
-            </button>
-        </div>
-    </div>
-    <div id="mid3">
-        <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/BANWKS50and51OpalZipPeppleSuedeTabletBanner705x395px?fmt=webp&wid=705" alt="">
-            <div>
-                <h1>
-                    COMFORTABLY WARM
-                </h1>
-                <p>
-                    Keep warm, and look cool in Opal Sky, our Chelsea-inspired suede upper boot. Step out in feel- good style every time with our Ultimate Comfort footbed and slip-resistant sole.               
-                 </p>
-                <div class="child"> 
-                    <button>
-                        Shop Opal Sky On Sale
-                    </button>
-                    <button>
-                        Shop Women's Boots
-                    </button>
+            <div id="mainchild">
+                <div>
+                    <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?fmt=webp" alt="error">
+                </div>
+                <div>
+                    <div>
+                        <h4>Nature X Lo</h4>
+                        <p>Grey Knit</p>
+                        <p>Size 12, Medium</p>
+                        <div>
+                            <button id="plus">+</button>
+                            <p id="quantity">1</p>
+                            <button id="minus">-</button>
+                        </div>
+                        <a href="">Remove</a>
+                    </div>
+                    <div>
+                        <p>$69.99</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22CostonWallyWPDarkSandWLinedOnsiteBannerTablet705x397?fmt=webp&wid=705" alt="">
+            <p>At least one product in cart is eligible for promotion. Enter code: <span>EXTRA40 below</span>.</p>
             <div>
-                <h1>
-                    WEATHER READY WITH A TWIST
-                </h1>
                 <p>
-                    A fresh take on the iconic Wallabee profile, our Corston Wally WP boot melds heritage style with a winter-ready twist. With a fully waterproof finish and snug faux fur linings - the weather's not dampening our plans!                
+                    Subtotal
                 </p>
-                <div class="child">
-                    <button>
-                        Shop Corston Wally On Sale
-                    </button>
-                    <button>
-                        Shop Men'sWaterproof Boots
-                    </button>
+                <p id="subtotal">
+                    $69.99
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    Taxes
+                </p>
+                <p>
+                    $00.00
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>Estimated Total</p>
+                <p id="total">$69.99</p>
+            </div>
+            <hr>
+            <div>
+                <p>Enter Your CPromo Code And Click Apply</p>
+                <div>
+                    <input type="text" id="cu">
+                    <button id="ap">APPLY</button>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="mid4">
-        <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/ClarksHomepageBanner8thSt1500x500?fmt=webp&wid=1500" alt="">
-        </div>
-        <h1>
-            8TH STREET BY RONNIE FIEG FOR CLARKS ORIGINALS
-        </h1>
-        <p>
-            With nearly three decades of footwear industry expertise to his name, American designer and founder of Kith Ronnie Fieg is a bona fide classic kicks aficionado- making him the perfect partner for a Clarks Originals collab           
-        </p>
-        <div>
-            <button>
-                Shop 8th Street Collection
-            </button>
-            <button>
-                See The Features
-            </button>
-        </div>
-    </div>
-    <div id="mid5">
-        <div>
-            <span>SAFETY RECALL OF FIVE STYLES OF CLARKS WOMEN’S SHOES</span>
-            <a href=""><span>Click Here </span>for more information</a>
-        </div>
-    </div>
-    <div id="mid6">
-        <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/MagnoliaZipBlackLeather852x852px?&fmt=png-alpha" alt="">
-            <button>Shop Women</button>
-        </div>
-        <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/MNature5TieBeeswaxLeather852x852px?&fmt=png-alpha" alt="">
-            <button>Shop Men</button>
-        </div>
-        <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/WebBannersDualGenderSashikoOriginalsHomepage852x852px?&fmt=png-alpha" alt="">
-            <button>Shop Original</button>
-        </div>
-        <div>
-            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/KWallabeeBootNavyCombi852x852px?&fmt=png-alpha" alt="">
-            <button>Shop Kids</button>
+            <p>Nurses, Medical Professionals, Military, First Responders, and Airline Employees receive a discount with ID.me</p>
+            <img src="https://s3.amazonaws.com/idme/buttons/v4/verify-with-idme.png" alt="">
+            <button  id="btn2">CHECK OUT</button>
         </div>
     </div>
 
 
 
-
-
-
-    <div id="offer2">
-        <span>Buy now. Pay Later. with</span>
-        <img src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo" alt="">
-        <a href="">Found out more</a>
-    </div>
     <hr>
     <div id="contact">
         <div>
@@ -780,4 +631,60 @@
         </div>
     </div>
 </body>
+<script>
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click" , function(){
+        alert("Please Log In First");
+
+    });
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click" , function(){
+        alert("Please Log In First");
+        
+    });
+    let counter = 1;
+    let total = 0;
+    let plus = document.getElementById("plus");
+    plus.addEventListener("click" , function(){
+        ++counter;
+        document.getElementById("quantity").innerText = counter;
+        document.getElementById("quantity").innerText = counter;
+        total = 69.99*Number(counter).toFixed(2);
+        total=total.toFixed(2);
+        document.getElementById("subtotal").innerText=total;
+        document.getElementById("total").innerText=total;
+    });
+    let minus = document.getElementById("minus");
+    minus.addEventListener("click" , function(){
+        if(counter>1){
+            --counter;
+            document.getElementById("quantity").innerText = counter;
+            document.getElementById("quantity").innerText = counter;
+            total = 69.99*Number(counter);
+            total=total.toFixed(2);
+            document.getElementById("subtotal").innerText=total;
+            document.getElementById("total").innerText=total;
+        }
+    });
+    let cupon = document.getElementById("cu");
+    let apply =document.getElementById("ap");
+    let flag2 = true;
+    apply.addEventListener("click" , function(){
+        if(cupon.value === "EXTRA" && flag2 === true){
+            total = 69.99*Number(counter);
+            total = total*.5;
+            total=total.toFixed(2);
+            document.getElementById("subtotal").innerText=total;
+            document.getElementById("total").innerText=total;
+            alert("Discount Applied");
+            flag2 = false;
+        }
+        else if(cupon.value === "EXTRA" && flag2 === false){
+            alert("Already Applied");
+        }
+        else{
+            alert("Invalid Entry");
+        }
+    });
+</script>
 </html>
