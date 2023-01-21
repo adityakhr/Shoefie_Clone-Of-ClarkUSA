@@ -495,7 +495,7 @@
             text-align: start;
         }
         #mid4>table tr:nth-child(even){
-            background-color:rgb(244, 244, 244); ;
+            background-color:rgb(244, 244, 244);
         }
         #mid4>table>tbody>tr{
             display: flex;
@@ -505,6 +505,45 @@
         #mid4table>tbody>tr>td:nth-child(2){
             font-weight: bolder;
 
+        }
+        #mid5{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 25px 0 25px 0;
+        }
+        #mid5>div:nth-child(1){
+            background-color:rgb(244, 244, 244);
+            text-align: center;
+            width: 30%;
+            height: 300px;
+        }
+        #mid5>div:nth-child(1)>div{
+            width: 50%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: 2;
+            gap: 10px 10px;
+        }
+        #mid5>div:nth-child(1)>div img{
+            width: 100%;
+        }
+        #mid5>div:nth-child(2){
+            background-color:rgb(244, 244, 244);
+            text-align: center;
+            width: 35%;
+            height: 300px;
+            padding: 25px 15px 25px 15px;
+            color: rgb(89, 86, 86);;
+        }
+        #mid5{
+            display: none;
+        }
+        #pay:hover{
+            cursor: pointer;
+        }
+        #atc:hover{
+            cursor: pointer;
         }
     </style>
 </head>
@@ -537,7 +576,7 @@
             </div>
             <div id="cart">
                 <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
-                <a href=""><img src="./cart.svg" alt=""></a>
+                <a href="./Emptycart.html"><img src="./cart.svg" alt=""></a>
             </div>
         </div>
         <div>
@@ -583,23 +622,23 @@
             </div>
             <span>SELECT SIZE <span><a href="#">Size Guide</a></span></span>
             <div>
-                <button>7</button>
-                <button>7½</button>
-                <button>8</button>
-                <button>8½</button>
-                <button>9</button>
-                <button>9½</button>
-                <button>10</button>
-                <button>10½</button>
-                <button>11</button>
-                <button>11½</button>
-                <button>12</button>
-                <button>13</button>
+                <button onclick="click1()">7</button>
+                <button onclick="click2()">7½</button>
+                <button onclick="click3()">8</button>
+                <button onclick="click4()">8½</button>
+                <button onclick="click5()">9</button>
+                <button onclick="click6()">9½</button>
+                <button onclick="click7()" id="b7">10</button>
+                <button onclick="click8()">10½</button>
+                <button onclick="click9()">11</button>
+                <button onclick="click10()" id="b10">11½</button>
+                <button onclick="click11()" >12</button>
+                <button onclick="click12()" id="b12">13</button>
             </div>
             <span>SELECT WIDTH</span>
             <p><button>MEDIUM</button></p>
             <div id="check">
-                <button>Add to shopping bag</button>
+                <button id="atc">Add to shopping bag</button>
             </div>
             <div>
                 <img src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo" alt="">
@@ -703,11 +742,11 @@
     </div>
     <div id="mid3">
         <div>
-            <button id="show">Product Details</button>
+            <button id="show" onclick="click2()">PRODUCT DETAILS</button>
             <hr>
         </div>
         <div id="payment">
-            <button id="pay">Product Details</button>
+            <button id="pay" onclick="click1()">PAYMENT AND RETURN</button>
             <hr>
         </div>
     </div>
@@ -756,6 +795,28 @@
                 </tr>
             </tbody>
         </table>
+
+    </div>
+    <div id="mid5">
+        <div>
+            <h1>PAYMENT OPTION</h1>
+            <p>Payments are handled securely by CyberSource. We accept the following payments:</p>
+            <div>
+                <img src="./paypal.png" alt="">
+                <img src="./visa.png" alt="">
+                <img src="./mastercard.png" alt="">
+                <img src="./discover.jpeg" alt="">
+                <img src="./AE.png" alt="">
+                <img src="./klarna.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h1>RETURNS ARE FREE</h1>
+            <p>Simply return your unworn product within 60 days days of purchase for a full refund. Online orders can be returned either by mail or by visiting a Clarks Retail Store.</p>
+            <p>Online orders paid for using Klarna need to be returned to our warehouse where you will be refunded to your original form of payment.</p>
+            <a href="#">More returns information</a>
+        </div>
+
     </div>
     <hr>
     <div id="contact">
@@ -913,20 +974,80 @@
             --counter
         }
     });
-    let showbtn = document.getElementById("show");
-    showbtn.addEventListener("click" , function(){
+    function click2(){
         if(document.getElementById("table").style.display="none"){
             document.getElementById("table").style.display="initial"
+            document.getElementById("table").style.width="100%"
         }else{
             document.getElementById("table").style.display="none"
         }
-        showbtn.addEventListener("click" , function(){
-        if(document.getElementById("table").style.display="none"){
-            document.getElementById("table").style.display="initial"
+    }
+    function click1(){
+        if(document.getElementById("mid5").style.display="none"){
+            document.getElementById("mid5").style.display="initial"
+            
         }else{
-            document.getElementById("table").style.display="none"
+            document.getElementById("mid5").style.display="none"
+        }
+    }
+    let flag1 = false;
+    function click1(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click2(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click3(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click4(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click5(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click6(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click7(){
+        document.getElementById("b7").style.backgroundColor = "aliceblue";
+        flag1=true;
+    }
+    function click8(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click9(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click10(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click11(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click12(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    let addtocard = document.getElementById("atc");
+    addtocard.addEventListener("click", function(){
+        if(flag1 === false){
+            alert("Please select the available size");
+        }else{
+            alert("Added to bag");
+            window.location.href = "cart.html";
         }
     });
-    });
+
 </script>
 </html>

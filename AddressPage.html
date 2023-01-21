@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Shoefie Official Site/address</title>
+    <style>
+        body{
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+        }
+        #logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #logo img{
+            margin: 25px 0 25px 0;
+            border-radius:150px;
+            width: 150px;
+        }
+        #links{
+            width: 40%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #links>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a{
+            margin-left: 0;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a>img{
+            width: 35px;
+        }
+        #cart{
+            width: 8%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 25%
+        }
+        .nav>div:nth-child(2)>div:nth-child(1){
+            width: 20%;
+        }
+        .nav>div:nth-child(2)>div:nth-child(1)>a>img{
+            width: 130px;
+            border-radius: 40px;
+        }
+        #logHeading{
+            display: flex;
+            align-items: center;
+        }
+        #logHeading>p{
+            width: 100%;
+            font-size: 50px;
+            margin-left: 7%;
+        }
+        #logHeading>div>img{
+            width: 18%;
+        }
+        #input{
+           display: flex;
+           justify-content: space-around;
+           width: 90%;
+           margin: auto;
+        }
+        #input>form{
+            width: 40%;
+        }
+        #input>form>p{
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        #input>form>input{
+            width: 98%;
+            height: 35px;
+            margin-bottom: 10px;
+        }
+        #input img{
+            width: 20px;
+        }
+        #input>form>a{
+            font-size: 15px;
+            color: rgb(9, 146, 200);
+            display: block;
+        }    
+        #input>form>p:nth-last-child(3){
+            margin-bottom: 0px;
+        }
+        #input>form>p>a{
+            color: #1E88E5;
+        }
+        #input>form>p:nth-last-child(2){
+            margin-top: 0;
+        }
+        #input button{
+            width: 100%;
+            height: 40px;
+            margin: 30px 0 50px 0;
+            border: 0 ;
+            color: white;
+            background-color: grey;
+            font-size: 18px;
+        }
+        #input button:hover{
+            background-color: rgb(157, 153, 153);
+            cursor: pointer;
+        }
+        @media all and (max-width:600px){
+            #logHeading>p{
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+        @media all and (max-width:1000px){
+            #input{
+                width: 550px;
+            }
+            #logHeading>p{
+                text-align: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <a href="./index.html"><img src="./Logo.png"></a>
+    </div>
+    <hr>
+    <div id="logHeading">
+        <p>PERSONAL DETAILS<p>
+    </div>
+    <hr>
+    <div id="input">
+        <form id="form">
+            <p>Email Adderss</p>
+            <input type="email" required>
+            <p>First Name</p>
+            <input type="text" required>
+            <p>Last Name</p>
+            <input type="text" required>
+            <p>Address</p>
+            <input type="text" required>
+            <p>Debit Card Number</p>
+            <input type="number" required>
+            <p>Debit Card Expiry Date</p>
+            <input type="date" required>
+            <p>CVV</p>
+            <input type="number" required>
+            <p>Card Holder Name</p>
+            <input type="text" required>
+            <button type="submit" id="sub">DONE</button>
+        </form>
+    </div>
+</body>
+<script>
+    let flag= true;
+    let formEl = document.getElementById("form");
+    formEl.addEventListener("submit" , function(el){
+        el.preventDefault();
+        if(flag === true){
+            alert("Purchase Successful...You can leave This Page");
+            flag =false;
+        }else{
+            alert("Already Made Payment For This");
+        }
+    })
+</script>
+</html>
