@@ -399,7 +399,7 @@
             margin: auto;
             margin-top: 28px;
             margin-bottom: 35px;
-            height: 60px;
+            padding: 15px 0 15px 0 ;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -407,7 +407,7 @@
         }
         #mid5>div{
             width: 99%;
-            height: 48px;
+            padding: 15px 0 15px 0 ;
             margin: auto;
             border: 1px solid white;
             display: flex;
@@ -518,6 +518,247 @@
             font-size: 12px;
             height: 35px;
         }
+        #mid0{
+            display: none;
+        }
+        #mid0 img{
+            width: 100% ;
+        }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:700px) and (max-width:1000px){
+            
+            #contact{
+                display: none;
+            }
+            .nav>div:nth-child(2){
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #mid1{
+                background-color: white;
+                width: 100%;
+            }
+            #mid1>div{
+                width: 90%;
+            }
+            #mid1>div>div:nth-child(6){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 4;
+                gap: 15px 15px;
+            }
+            #mid1>div>div:nth-child(6) button{
+                width: 100%;
+            }
+            #mid0{
+            display: none;
+            }
+            #mid4>div:nth-child(1)~*{
+                width: 60%;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #mid5 >div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 140px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:699px){
+            
+            #contact{
+                display: none;
+            }
+            .nav>div:nth-child(2){
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #mid1{
+                background-color: white;
+                width: 100%;
+            }
+            #mid1>div{
+                width: 90%;
+            }
+            #mid1>div>div:nth-child(6){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 4;
+                gap: 15px 15px;
+            }
+            #mid1>div>div:nth-child(6) button{
+                width: 100%;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #mid0{
+                display: initial;
+            }
+            #mid{
+                display: none;
+            }
+            #mid3 > div{
+                width: 100%;
+            }
+            #mid3{
+                display: grid;
+                grid-template-columns:1;
+                grid-template-rows:2;
+                gap: 15px 15px;
+            }
+            #mid4>div:nth-child(1)~*{
+                width: 60%;
+                margin: auto;
+            }
+            #mid5>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 140px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:790px){
+            #mid6{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-row: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 140px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
     </style>
 </head>
 <body>
@@ -551,6 +792,17 @@
                 <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
                 <a href="./Emptycart.html"><img src="./cart.svg" alt=""></a>
             </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+            </div>
         </div>
         <div>
             <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
@@ -576,6 +828,9 @@
     </div>
     <div id="mid">
         <img id="a2" src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22WOriannaMidDarkSandSuedeOnsiteBannerDesktop1500x500?fmt=webp&wid=1500" alt="">
+    </div>
+    <div id="mid0">
+        <img src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22WOriannaMidDarkSandSuedeOnsiteBannerTablet705x397?fmt=webp&wid=768" alt="">
     </div>
     <div id="mid2">
         <h1>
@@ -780,4 +1035,16 @@
         </div>
     </div>
 </body>
+<script>
+    let ham = document.querySelector(".hambuger");
+    let nav = document.querySelector("#links");
+    ham.addEventListener("click" , function(){
+        ham.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+    let sea = document.getElementById("searchfor");
+    sea.addEventListener("click" , function(){
+       window.location.href = "productsMen.html"; 
+    });
+</script>
 </html>

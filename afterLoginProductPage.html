@@ -87,8 +87,7 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
-            margin-left: 25%;
-           
+            margin-left: 25%
         }
         .nav>div:nth-child(2)>div:nth-child(1){
             width: 20%;
@@ -209,6 +208,10 @@
             right: 23%;
             top: -8px;
         }
+
+
+
+
         #footer{
             background-color: rgba(100, 100, 111, 0.2);
             padding-bottom: 60px;
@@ -537,12 +540,6 @@
         #mid5{
             display: none;
         }
-        #mid5 button:active{
-            display: initial;
-        }
-        #mid:disabled{
-            display: none;
-        }
         #pay:hover{
             cursor: pointer;
         }
@@ -558,8 +555,8 @@
             height: 2px;
             background-color: black;
             margin: 5px auto;
-            -webkit-transition:all .5s ease-in-out ;
-            transition: all .5s ease-in-out ; 
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
         }
         @media all and (min-width:650px) and (max-width:1050px){
             .nav>div:nth-child(3){
@@ -597,11 +594,12 @@
                 clear: both;
                 left: 100%;
             }
+            #cart{
+                margin-right:40% ;
+           
+            }
             #links.active{
                 left: 0;
-            }
-            #cart{
-            margin-right:40% ;
             }
             #links a{
                 font-size: 20px;
@@ -619,6 +617,7 @@
             #offer{
                 padding: 25px 0 25px 0;
             }
+            
             #mid1{
                 display: grid;
                 grid-template-columns: 1;
@@ -671,12 +670,12 @@
                 clear: both;
                 left: 100%;
             }
-            #links.active{
-                left: 0;
-            }
             #cart{
                 margin-right:40% ;
            
+            }
+            #links.active{
+                left: 0;
             }
             #links a{
                 font-size: 20px;
@@ -692,7 +691,6 @@
     </style>
 </head>
 <body>
-    
     <a href="">
         <div id="offer">
             <span>SAVE UP TO</span>
@@ -701,11 +699,10 @@
         </div>
     </a>
     <div class="nav">
-        
         <div>
             <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
             <a href=""><img src="./location.svg" alt=""> Locaton</a>
-            <a href="./login.html"><img src="./user.svg" alt=""> Log in / Register</a>
+            <a href="./productsMen.html"><img src="./user.svg" alt=""> Log Out</a>
         </div>
         <div>
             <div id="logo">
@@ -713,7 +710,7 @@
             </div>
             <div id="links">
                 <a href="">Women</a>
-                <a href="./productsMen.html">Men</a>
+                <a href="./afterLoginPage.html">Men</a>
                 <a href="">Kids</a>
                 <a href="">Originals</a>
                 <a href="">Accessories</a>
@@ -722,7 +719,7 @@
             </div>
             <div id="cart">
                 <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
-                <a href="./Emptycart.html"><img src="./cart.svg" alt=""></a>
+                <a href="./AfterLogInCart.html"><img src="./cart.svg" alt=""></a>
             </div>
             <div class="hambuger">
                 <span class="bar">
@@ -736,7 +733,6 @@
                 </span>
             </div>
         </div>
-        
         <div>
             <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
             <span>|</span>
@@ -1203,7 +1199,7 @@
             alert("Please select the available size");
         }else{
             alert("Added to bag");
-            window.location.href = "cart.html";
+            window.location.href = "AfterLogInCart.html";
         }
     });
     let ham = document.querySelector(".hambuger");
@@ -1213,8 +1209,8 @@
         nav.classList.toggle("active");
     });
     let sea = document.getElementById("searchfor");
-    sea.addEventListener("click" , function(){
-       window.location.href = "productsMen.html"; 
+        sea.addEventListener("click" , function(){
+        window.location.href = "afterLoginPage.html"; 
     });
 </script>
 </html>

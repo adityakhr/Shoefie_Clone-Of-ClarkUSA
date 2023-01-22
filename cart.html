@@ -316,10 +316,11 @@
             display: flex;
             justify-content: space-between;
         }
+        
         #mainchild{
             width: 60%;
             padding: 50px 25px 50px 25px;
-            display: flex;           
+            display: flex;         
         }
         #mainchild>div:nth-child(2){
             width: 40%;
@@ -392,6 +393,16 @@
         #main>div:nth-child(2)>div:nth-child(8) p{
             font-size: 14px;
         }
+        #back{
+            width: 100%;
+            padding: 3px 0 3px 0;
+            background-color: rgba(100, 100, 111, 0.2);
+            margin: 15px 0 15px 0;
+            font-size 18px;
+        }
+        #back a{
+            margin-left: 2%;
+        }
         #main>div:nth-child(2)>div:nth-child(8) input{
             width: 60%;
             height: 40px;
@@ -419,6 +430,160 @@
             margin-left: 30%;
             width: 40%;
             margin-bottom: 20px;
+        }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:650px) and (max-width:1050px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #main{
+                display: grid;
+                grid-template-columns: 1 ,1fr;
+                grid-template-rows: 2;
+
+            }
+            #main>div:nth-child(2){
+                width: 100%;
+            }
+            #contact{
+                display: none;
+            }
+            #main>div:nth-child(1)>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 140px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:649px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 140px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+            #main{
+                display: grid;
+                grid-template-columns: 1 ,1fr;
+                grid-template-rows: 2;
+
+            }
+            #main>div:nth-child(1)>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            #main>div:nth-child(2){
+                width: 100%;
+            }
+            #contact{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -453,12 +618,26 @@
                 <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
                 <a href=""><img src="./cart.svg" alt=""></a>
             </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+            </div>
         </div>
         <div>
             <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
             <span>|</span>
             <span><a href="">FREE RETURN</a> EVERYDAY</span>
         </div>
+    </div>
+    <div id="back">
+        <P><a href="./productPage.html">< CONTINUE BROWING</a></P>
     </div>
     <div id="logHeading">
         <p>My SHOPPING BAG</p>
@@ -529,6 +708,9 @@
                     <input type="text" id="cu">
                     <button id="ap">APPLY</button>
                 </div>
+                <p id="status">
+
+                </p>
             </div>
             <p>Nurses, Medical Professionals, Military, First Responders, and Airline Employees receive a discount with ID.me</p>
             <img src="https://s3.amazonaws.com/idme/buttons/v4/verify-with-idme.png" alt="">
@@ -677,6 +859,7 @@
             document.getElementById("subtotal").innerText=total;
             document.getElementById("total").innerText=total;
             alert("Discount Applied");
+            document.getElementById("status").innerText = "COUPON APPLIED";
             flag2 = false;
         }
         else if(cupon.value === "EXTRA" && flag2 === false){
@@ -685,6 +868,12 @@
         else{
             alert("Invalid Entry");
         }
+    });
+    let ham = document.querySelector(".hambuger");
+    let nav = document.querySelector("#links");
+    ham.addEventListener("click" , function(){
+        ham.classList.toggle("active");
+        nav.classList.toggle("active");
     });
 </script>
 </html>
