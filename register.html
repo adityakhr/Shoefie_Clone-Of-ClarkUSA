@@ -67,7 +67,7 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
-            margin-left: 25%
+            margin-left: 25%;
         }
         .nav>div:nth-child(2)>div:nth-child(1){
             width: 20%;
@@ -276,6 +276,139 @@
             border-radius: 10px;
             height: 45px;
         }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:650px) and (max-width:1050px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #contact{
+                display: none;
+            }
+            #input{
+                width: 500px;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 80px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:649px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #contact{
+                display: none;
+            }
+            #input{
+                width: 95%;
+                margin: auto;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 80px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links.active{
+                left: 0;
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
     </style>
 </head>
 <body>
@@ -302,6 +435,17 @@
                 <a href=""><img src="./search.svg" alt=""></a>
                 <a href=""><img src="./cart.svg" alt=""></a>
             </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+            </div>
         </div>
     </div>
     <hr>
@@ -327,7 +471,7 @@
             <button type="submit" id="sub">CREAT ACCOUNT</button>
             <p>By creating this account you agree to our</p>
             <p><a href="">Terms & Conditions</a></p>
-            <p>Already have an clarks account?<span> </span><a href="./login.html">Log In</a> or <a href="./">Admin Log In</a></p>
+            <p>Already have an clarks account?<span> </span><a href="./login.html">Log In</a> or <a href="./adminLogin.html">Admin Log In</a></p>
         </form>
     </div>
     <hr>
@@ -348,8 +492,8 @@
             <div>
                 <div><p>DEPARTMENT</p></div>
                 <div><p>HELP</p></div>
-                <div><p>ABOUT CLARKS</p></div>
-                <div><p>CLAEKSUSA.COM</p></div>
+                <div><p>ABOUT US</p></div>
+                <div><p>SHOEFIE.COM</p></div>
                 <div>
                     <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.svg"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.svg"> </a>
@@ -461,5 +605,11 @@
         sName.value="";
         passwordEl.value="";
     }); 
+    let ham = document.querySelector(".hambuger");
+    let nav = document.querySelector("#links");
+    ham.addEventListener("click" , function(){
+        ham.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
 </script>
 </html>

@@ -21,10 +21,10 @@
         }
         #offer{
             background-color: #efb9b9;
-            height: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 40px;
         }
         #offer>span{
             font-size: 18px;
@@ -379,6 +379,145 @@
             height: 40px;
             margin-top: 25px;
         }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:1001px) and (max-width:1300px){
+            #product{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px 20px;
+            }
+        }
+        @media all and (min-width:700px) and (max-width:1000px){
+            #product{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px 20px;
+            }
+            #contact{
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #container>div:nth-child(1){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+                gap: 10px;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:699px){
+            #product{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px 20px;
+            }
+            #contact{
+                display: none;
+            }
+            #container>div:nth-child(1){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+                gap: 10px;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
     </style>
 </head>
 <body>
@@ -410,7 +549,18 @@
             </div>
             <div id="cart">
                 <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
-                <a href="./cart.html"><img src="./cart.svg" alt=""></a>
+                <a href="./AfterLogInCart.html"><img src="./cart.svg" alt=""></a>
+            </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
             </div>
         </div>
         <div>
@@ -494,8 +644,8 @@
             <div>
                 <div><p>DEPARTMENT</p></div>
                 <div><p>HELP</p></div>
-                <div><p>ABOUT CLARKS</p></div>
-                <div><p>CLAEKSUSA.COM</p></div>
+                <div><p>ABOUT US</p></div>
+                <div><p>SHOEFIE.COM</p></div>
                 <div>
                     <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.svg"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.svg"> </a>
@@ -625,7 +775,7 @@
             localStorage.setItem("dataa", JSON.stringify(products));
             let divFEl = document.querySelector("#firstDiv");
             divFEl.addEventListener("click" , function(){
-                window.location.href="productPage.html";
+                window.location.href="afterLoginProductPage.html";
             }); 
         }
         catch(error){
@@ -763,5 +913,11 @@
                     display(namewise);
                 }
             });
+            let ham = document.querySelector(".hambuger");
+                let nav = document.querySelector("#links");
+                ham.addEventListener("click" , function(){
+                    ham.classList.toggle("active");
+                    nav.classList.toggle("active");
+                });
 </script>
 </html>

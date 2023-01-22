@@ -8,12 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Shoefie Official Site/Login</title>
     <style>
         body{
             font-family: poppins;
             margin: 0;
             padding: 0;
+        }
+        a:nth-child(1){
+            text-decoration: none;
+            color: black;
+        }
+        #offer{
+            background-color: #efb9b9;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer>span{
+            font-size: 18px;
+        }
+        #offer>span:nth-child(2){
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 0 35px 0 35px;
         }
         .nav>div:nth-child(1){
             height: 50px;
@@ -37,7 +55,6 @@
             display: flex;
             align-items: center;
             box-shadow: rgba(100, 100, 111, 0.2);
-            
         }
         #logo{
             text-align: center;
@@ -77,6 +94,21 @@
             width: 130px;
             border-radius: 40px;
         }
+        .nav>div:nth-child(3){
+            width: 98%;
+            margin: auto;
+            background-color: gainsboro;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav>div:nth-child(3)>span:nth-child(2){
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(3)>span>a{
+            color: rgb(87, 84, 84);
+        }
         #logHeading{
             display: flex;
             justify-content: space-between;
@@ -84,63 +116,54 @@
         }
         #logHeading>p:nth-child(1){
             font-size: 50px;
-            margin-left: 7%;
+            margin-left: 6%;
+            color: rgb(87, 84, 84);
         }
         #logHeading>div{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
             margin-right: 7%;
+            display: grid;
+            grid-template-columns: 1 , 100%;
+            width: 30%;
         }
-        #logHeading>div>img{
-            width: 18%;
+        #logHeading>div p ,#logHeading>div>div {
+            text-align: end;
         }
-        #input{
-            width: 28%;
-            margin: auto;
-            margin-top: 90px;
-            margin-bottom: 150px;
+        #logHeading>div p{
+            height: 8px;
         }
-        #input>form>p{
-            margin-bottom: 8px;
-            font-size: 15px;
+        #logHeading>div>div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            display: inline;
+            font-weight: bolder;
         }
-        #input>form>input{
-            width: 98%;
-            height: 35px;
-            margin-bottom: 10px;
+        #logHeading>div>div img{
+            width: 15px;
+            height: 15px;
         }
-        #input>form img{
-            width: 20px;
-        }
-        #input>form>a{
-            font-size: 15px;
-            color: rgb(9, 146, 200);
-            display: block;
-        }
-        #input>form>button{
+        #logHeading>div>button{
             width: 100%;
             height: 40px;
-            margin: 30px 0 0 0;
-            border: 0 ;
-            color: white;
+            margin-top: 25px;
             background-color: #1E88E5;
-            font-size: 18px;
+            border: 0;
+            color: white;
         }
-        #input>form>button:hover{
-            background-color: grey;
-            cursor: pointer;
+        #mid1{
+            width: 98%;
+            margin: auto;
+            background-color: rgb(246, 244, 244);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(87, 84, 84);
+            margin: 50px 0 50px 0 ;
         }
-        #input>form>p:nth-last-child(1){
-            text-align: center;
-        }
-        #input>form>p:nth-last-child(3){
-            margin-top: 30px;
-            font-size: 18px;
-            color: rgb(156, 150, 150);
-        }
-        #input>form>p>a{
-            color: #1E88E5;
+        #mid1 img{
+            color: rgb(87, 84, 84);
+            margin-right: 15px;
         }
         #contact{
             display: flex;
@@ -278,6 +301,128 @@
             border-radius: 10px;
             height: 45px;
         }
+        #main{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #mainchild{
+            width: 60%;
+            padding: 50px 25px 50px 25px;
+            display: flex;         
+        }
+        #mainchild>div:nth-child(2){
+            width: 40%;
+            padding: 50px 25px 50px 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 45px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div{ 
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0 15px 0;
+            
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div p{ 
+            text-align: center;
+            font-size: 20px;
+            background-color: white;
+            height: 42px;
+            width: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(87, 84, 84);
+            color:rgb(87, 84, 84) ;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1) h4 , #mainchild>div:nth-child(2)>div:nth-child(1) p{ 
+            height: 5px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div button{ 
+            background-color: white;
+            font-size: 25px;
+            height: 45px;
+            width: 45px;
+            border: 1px solid rgb(87, 84, 84);
+            margin: 0 5px 0 5px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1) a{ 
+            color:rgb(117, 152, 165);
+        }
+        #main>div:nth-child(2){
+            width: 35%;
+        }
+        #main>div:nth-child(2)>div:nth-child(2),#main>div:nth-child(2)>div:nth-child(4),#main>div:nth-child(2)>div:nth-child(6){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main>div:nth-child(2)>div:nth-child(6){
+            font-weight: bold;
+            font-size: 18px;
+            color: rgb(87, 84, 84);
+        }
+        #main>div:nth-child(2)>img{
+            width: 30%;
+        }
+        #main>div:nth-child(2)>button{
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-color: #1E88E5;
+            border: 0;
+            color: white;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) {
+            margin: 25px 0 50px 0;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) p{
+            font-size: 14px;
+        }
+        #back{
+            width: 100%;
+            padding: 3px 0 3px 0;
+            background-color: rgba(100, 100, 111, 0.2);
+            margin: 15px 0 15px 0;
+            font-size 18px;
+        }
+        #back a{
+            margin-left: 2%;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) input{
+            width: 60%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84) ;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) button{
+            width: 30%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84) ;
+            color:rgb(87, 84, 84) ;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) button:hover{
+            background-color: grey ;
+            transition: all .5s linear;
+            color:white ;
+        }
+        
+        #main>div:nth-child(2) img{
+            margin-left: 30%;
+            width: 40%;
+            margin-bottom: 20px;
+        }
         .hambuger{
             display: none;
         }
@@ -302,11 +447,22 @@
             #offer{
                 padding: 25px 0 25px 0;
             }
+            #main{
+                display: grid;
+                grid-template-columns: 1 ,1fr;
+                grid-template-rows: 2;
+
+            }
+            #main>div:nth-child(2){
+                width: 100%;
+            }
             #contact{
                 display: none;
             }
-            #input{
-                width: 500px;
+            #main>div:nth-child(1)>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
             }
             .hambuger{
                 display: block;
@@ -322,7 +478,7 @@
             }
             #links{
                 position: fixed;
-                top: 80px;
+                top: 175px;
                 gap: 15px;
                 flex-direction: column;
                 width: 92%;
@@ -332,12 +488,12 @@
                 clear: both;
                 left: 100%;
             }
+            #links.active{
+                left: 0;
+            }
             #cart{
                 margin-right:40% ;
            
-            }
-            #links.active{
-                left: 0;
             }
             #links a{
                 font-size: 20px;
@@ -349,7 +505,6 @@
                 align-items: center;
                 color: black;
             }
-            
         }
         @media all and (min-width:350px) and (max-width:649px){
             .nav>div:nth-child(3){
@@ -363,12 +518,22 @@
             #offer{
                 padding: 25px 0 25px 0;
             }
+            #main{
+                display: grid;
+                grid-template-columns: 1 ,1fr;
+                grid-template-rows: 2;
+
+            }
+            #main>div:nth-child(1)>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            #main>div:nth-child(2){
+                width: 100%;
+            }
             #contact{
                 display: none;
-            }
-            #input{
-                width: 95%;
-                margin: auto;
             }
             .hambuger{
                 display: block;
@@ -384,7 +549,7 @@
             }
             #links{
                 position: fixed;
-                top: 80px;
+                top: 175px;
                 gap: 15px;
                 flex-direction: column;
                 width: 92%;
@@ -394,12 +559,12 @@
                 clear: both;
                 left: 100%;
             }
+            #links.active{
+                left: 0;
+            }
             #cart{
                 margin-right:40% ;
            
-            }
-            #links.active{
-                left: 0;
             }
             #links a{
                 font-size: 20px;
@@ -415,10 +580,18 @@
     </style>
 </head>
 <body>
+    <a href="">
+        <div id="offer">
+            <span>SAVE UP TO</span>
+            <span>50% OFF CLEARANCE*</span>
+            <span>USE CODE: EXTRA</span>
+        </div>
+    </a>
     <div class="nav">
         <div>
-            <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
+            <a href=""> <img src="./truck.svg" alt=""> Track Orders</a>
             <a href=""><img src="./location.svg" alt=""> Locaton</a>
+            <a href="./productsMen.html"><img src="./user.svg" alt=""> Log Out</a>
         </div>
         <div>
             <div id="logo">
@@ -426,7 +599,7 @@
             </div>
             <div id="links">
                 <a href="">Women</a>
-                <a href="./productsMen.html">Men</a>
+                <a href="./afterLoginPage.html">Men</a>
                 <a href="">Kids</a>
                 <a href="">Originals</a>
                 <a href="">Accessories</a>
@@ -434,7 +607,7 @@
                 <a href="">Sustainability</a>
             </div>
             <div id="cart">
-                <a href=""><img src="./search.svg" alt=""></a>
+                <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
                 <a href=""><img src="./cart.svg" alt=""></a>
             </div>
             <div class="hambuger">
@@ -449,28 +622,96 @@
                 </span>
             </div>
         </div>
-    </div>
-    <hr>
-    <div id="logHeading">
-        <p>Log in</p>
         <div>
-            <p>need help</p>
-            <img src="./help.svg">
+            <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
+            <span>|</span>
+            <span><a href="">FREE RETURN</a> EVERYDAY</span>
         </div>
     </div>
-    <hr>
-    <div id="input">
-        <form id="form">
-            <p>Email Adderss</p>
-            <input type="email" id="email" required  >
-            <p>Password <img src="./information.svg"></p>
-            <input type="password" id="password" required>
-            <a href="">Forget Your Password?</a>
-            <p><input type="checkbox" name="" id="">Remember Me</p>
-            <button type="submit">LOG IN</button>
-            <p>Don't have a clarks account? <a href="./register.html">CREAT AN ACCOUNT</a></p>
-        </form>
+    <div id="back">
+        <P><a href="./productPage.html">< CONTINUE BROWING</a></P>
     </div>
+    <div id="logHeading">
+        <p>My SHOPPING BAG</p>
+        <div>
+            <p>BAG ID:679742264</p>
+            <div>
+                <p>need help? <img src="./help.svg"></p>
+            </div>
+            <button id="btn1">CHECK OUT</button>
+        </div>
+    </div>
+    <div id="mid1">
+        <img src="./truck.svg" alt="">
+        <span>FREE SHIPPING ON ALL $50+ ORDERS + FREE RETURNS EVERYDAY</span>
+    </div>
+    <div id="main">
+        <div>
+            <div id="mainchild">
+                <div>
+                    <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?fmt=webp" alt="error">
+                </div>
+                <div>
+                    <div>
+                        <h4>Nature X Lo</h4>
+                        <p>Grey Knit</p>
+                        <p>Size 12, Medium</p>
+                        <div>
+                            <button id="plus">+</button>
+                            <p id="quantity">1</p>
+                            <button id="minus">-</button>
+                        </div>
+                        <a href="">Remove</a>
+                    </div>
+                    <div>
+                        <p>$69.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>At least one product in cart is eligible for promotion. Enter code: <span>EXTRA40 below</span>.</p>
+            <div>
+                <p>
+                    Subtotal
+                </p>
+                <p id="subtotal">
+                    $69.99
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    Taxes
+                </p>
+                <p>
+                    $00.00
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>Estimated Total</p>
+                <p id="total">$69.99</p>
+            </div>
+            <hr>
+            <div>
+                <p>Enter Your CPromo Code And Click Apply</p>
+                <div>
+                    <input type="text" id="cu">
+                    <button id="ap">APPLY</button>
+                </div>
+                <p id="status">
+
+                </p>
+            </div>
+            <p>Nurses, Medical Professionals, Military, First Responders, and Airline Employees receive a discount with ID.me</p>
+            <img src="https://s3.amazonaws.com/idme/buttons/v4/verify-with-idme.png" alt="">
+            <button  id="btn2">CHECK OUT</button>
+        </div>
+    </div>
+
+
+
     <hr>
     <div id="contact">
         <div>
@@ -565,38 +806,70 @@
     </div>
 </body>
 <script>
-    let userData = JSON.parse( localStorage.getItem("data"));
-    if(userData===null){
-        userData = [];
-    }
-    let emailEl = document.getElementById("email");
-    let passwordEl = document.getElementById("password")
-    let formEl = document.querySelector("form");
-    function check(a, b , arr){
-        for(let i=0 ; i<arr.length ; ++i){
-            if(arr[i].email.toUpperCase() === a.value.toUpperCase() && arr[i].password === b.value ){
-                return true;
-            }
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click" , function(){
+        window.location.href="AddressPage.html";
+
+    });
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click" , function(){
+        window.location.href="AddressPage.html";
+        
+    });
+    let counter = 1;
+    let total = 0;
+    let plus = document.getElementById("plus");
+    plus.addEventListener("click" , function(){
+        ++counter;
+        document.getElementById("quantity").innerText = counter;
+        document.getElementById("quantity").innerText = counter;
+        total = 69.99*Number(counter).toFixed(2);
+        total=total.toFixed(2);
+        document.getElementById("subtotal").innerText=total;
+        document.getElementById("total").innerText=total;
+    });
+    let minus = document.getElementById("minus");
+    minus.addEventListener("click" , function(){
+        if(counter>1){
+            --counter;
+            document.getElementById("quantity").innerText = counter;
+            document.getElementById("quantity").innerText = counter;
+            total = 69.99*Number(counter);
+            total=total.toFixed(2);
+            document.getElementById("subtotal").innerText=total;
+            document.getElementById("total").innerText=total;
         }
-        return false;
-    }
-    formEl.addEventListener( "submit" , function(el){
-        el.preventDefault();
-        if(check(emailEl , passwordEl , userData)==true){
-            alert("Log In Successful");
-            window.location.href="afterLoginPage.html";
+    });
+    let cupon = document.getElementById("cu");
+    let apply =document.getElementById("ap");
+    let flag2 = true;
+    apply.addEventListener("click" , function(){
+        if(cupon.value === "EXTRA" && flag2 === true){
+            total = 69.99*Number(counter);
+            total = total*.5;
+            total=total.toFixed(2);
+            document.getElementById("subtotal").innerText=total;
+            document.getElementById("total").innerText=total;
+            alert("Discount Applied");
+            document.getElementById("status").innerText = "COUPON APPLIED";
+            flag2 = false;
+        }
+        else if(cupon.value === "EXTRA" && flag2 === false){
+            alert("Already Applied");
         }
         else{
-            alert("Invalid Information");
+            alert("Invalid Entry");
         }
-        emailEl.value="";
-        passwordEl.value ="";
     });
     let ham = document.querySelector(".hambuger");
     let nav = document.querySelector("#links");
     ham.addEventListener("click" , function(){
         ham.classList.toggle("active");
         nav.classList.toggle("active");
+    });
+    let sea = document.getElementById("searchfor");
+        sea.addEventListener("click" , function(){
+        window.location.href = "afterLoginPage.html"; 
     });
 </script>
 </html>
