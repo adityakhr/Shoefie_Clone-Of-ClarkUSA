@@ -25,40 +25,7 @@
             border-radius:150px;
             width: 150px;
         }
-        #links{
-            width: 40%;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #links>a{
-            text-decoration: none;
-            color: rgb(87, 84, 84);
-            font-size: 15px;
-        }
-        #cart>a{
-            margin-left: 0;
-            text-decoration: none;
-            color: rgb(87, 84, 84);
-            font-size: 15px;
-        }
-        #cart>a>img{
-            width: 35px;
-        }
-        #cart{
-            width: 8%;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left: 25%
-        }
-        .nav>div:nth-child(2)>div:nth-child(1){
-            width: 20%;
-        }
-        .nav>div:nth-child(2)>div:nth-child(1)>a>img{
-            width: 130px;
-            border-radius: 40px;
-        }
+        
         #logHeading{
             display: flex;
             align-items: center;
@@ -119,20 +86,21 @@
             background-color: rgb(157, 153, 153);
             cursor: pointer;
         }
-        @media all and (max-width:600px){
-            #logHeading>p{
-                text-align: center;
-                font-size: 25px;
+        @media all and (min-width:350px) and (max-width:1000px){
+            #logHeading p{
+                font-size: 18px;
             }
-        }
-        @media all and (max-width:1000px){
             #input{
-                width: 550px;
+                width:440px;
+                margin-left: 0;
             }
-            #logHeading>p{
-                text-align: center;
+            #footer{
+                display: none;
+
             }
-            
+            #footer2{
+                display: none;
+            }
         }
     </style>
 </head>
